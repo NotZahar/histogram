@@ -3,6 +3,7 @@ import "../components" as Components
 
 Rectangle {
     id: root
+
     width: 640; height: 320
     color: "#646464"
 

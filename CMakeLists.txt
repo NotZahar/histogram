@@ -22,8 +22,14 @@ find_package(
 
 qt_add_executable(
     ${PROJECT_NAME}
+        # cpp
         src/main.cpp
+        src/app.cpp
+
+        # qml
         src/qml/qml.qrc
+
+        # resources
         resources/app.qrc
 )
 
