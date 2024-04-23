@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_6',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]]
+  ['instance_25',['instance',['../classhist_1_1App.html#ac1a6698d35af59e14c1784e969549948',1,'hist::App']]]
 ];
