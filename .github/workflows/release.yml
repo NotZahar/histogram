@@ -1,0 +1,45 @@
+name: 'histogram release'
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - run: sudo apt update && sudo apt install software-properties-common -y
+      - run: sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+      - run: sudo apt update
+      - run: sudo apt install |
+              gcc-13 
+              g++-13 
+              cmake
+              qt6-base-dev 
+              qt6-declarative-dev 
+              libqt6qml6 
+              qml6-module-qtquick-window 
+              qml6-module-qtquick 
+              qml6-module-qtcore 
+              qml6-module-qtquick-controls 
+              qml6-module-qtqml
+              -y
+      - run: sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13 --slave /usr/bin/g++ g++ /usr/bin/g++-13
+
+      - uses: actions/checkout@v3
+      - run: cmake -DCMAKE_BUILD_TYPE=Release .
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          release_name: v${{ github.run_number }}
+          draft: false
+          prerelease: false
+
