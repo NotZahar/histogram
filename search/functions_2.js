@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_27',['run',['../classhist_1_1App.html#a3d4c821aa19894c5e9ea54bcfe70203b',1,'hist::App']]]
+  ['done_74',['done',['../classhist_1_1InitController.html#aa09e1b8947b1710ee3731b3369b8d0f1',1,'hist::InitController']]]
 ];

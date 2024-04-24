@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_7',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['main_2ecpp_8',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['finish_4',['finish',['../classhist_1_1InitState.html#a6c9482514b6d52011266dbf300e3b58a',1,'hist::InitState::finish()'],['../classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef',1,'hist::State::finish()']]]
 ];

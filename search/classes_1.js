@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settings_17',['settings',['../structhist_1_1settings.html',1,'hist']]]
+  ['qmlservice_50',['QMLService',['../classhist_1_1QMLService.html',1,'hist']]]
 ];

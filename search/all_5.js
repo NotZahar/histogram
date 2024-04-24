@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_10',['README.md',['../README_8md.html',1,'']]],
-  ['run_11',['run',['../classhist_1_1App.html#a3d4c821aa19894c5e9ea54bcfe70203b',1,'hist::App']]]
+  ['hist_8',['hist',['../namespacehist.html',1,'']]],
+  ['histogram_9',['histogram',['../namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6fabdfb01f3ea1f6351d0d53d79625c347f',1,'hist']]]
 ];

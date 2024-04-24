@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['instance_25',['instance',['../classhist_1_1App.html#ac1a6698d35af59e14c1784e969549948',1,'hist::App']]]
+  ['addnewstate_72',['addNewState',['../classhist_1_1StateManager.html#a6b1164c62b17ff4eee3a816c058f23b2',1,'hist::StateManager']]]
 ];
