@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/qml">
-        <file>pages/app.qml</file>
+        <file>pages/main.qml</file>
         <file>components/Clock.qml</file>
     </qresource>
 </RCC>

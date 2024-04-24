@@ -24,7 +24,12 @@ qt_add_executable(
     ${PROJECT_NAME}
         # cpp
         src/main.cpp
-        src/app.cpp
+        src/app_states/state.cpp
+        src/app_states/state_manager.cpp
+        src/app_states/init_state.cpp
+        src/controllers/init_controller.cpp
+        src/services/qml_service.cpp
+        src/services/storage.cpp
 
         # qml
         src/qml/qml.qrc
