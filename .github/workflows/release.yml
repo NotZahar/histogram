@@ -26,7 +26,8 @@ jobs:
               qml6-module-qtquick-window 
               qml6-module-qtquick 
               qml6-module-qtcore 
-              qml6-module-qtquick-controls 
+              qml6-module-qtquick-controls
+              qml6-module-qtquick-templates 
               qml6-module-qtqml
       - run: sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13 --slave /usr/bin/g++ g++ /usr/bin/g++-13
 

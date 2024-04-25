@@ -18,6 +18,6 @@ namespace hist {
 
         ~QMLService() = default;
 
-        std::unique_ptr<QQuickView> _startView;
+        std::unique_ptr<QQuickView> _mainView;
     };
 }

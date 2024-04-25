@@ -7,12 +7,12 @@ namespace hist {
     }
 
     void QMLService::init() noexcept {
-        _startView = std::make_unique<QQuickView>();
-        _startView->setSource(QUrl("qrc:/qml/pages/main.qml"));
+        _mainView = std::make_unique<QQuickView>();
+        _mainView->setSource(QUrl("qrc:/qml/pages/Main.qml"));
 
-        assert(_startView->status() != QQuickView::Error);
-        _startView->setResizeMode(QQuickView::SizeRootObjectToView);
-        _startView->show();
+        assert(_mainView->status() != QQuickView::Error);
+        _mainView->setResizeMode(QQuickView::SizeRootObjectToView);
+        _mainView->show();
     }
 }
 

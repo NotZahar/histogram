@@ -10,14 +10,9 @@ namespace hist {
 
         static Storage& instance() noexcept;
 
-        void setAppPtr(QGuiApplication* app) noexcept;
-        QGuiApplication* getAppPtr() const noexcept;
-
     private:
-        Storage() noexcept;
+        Storage() noexcept = default;
 
         ~Storage() = default;
-
-        QGuiApplication* _app;
     };
 }

@@ -27,9 +27,13 @@ qt_add_executable(
         src/app_states/state.cpp
         src/app_states/state_manager.cpp
         src/app_states/init_state.cpp
+        src/app_states/hist_state.cpp
         src/controllers/init_controller.cpp
         src/services/qml_service.cpp
         src/services/storage.cpp
+        src/services/register_types_service.cpp
+        src/services/states_service.cpp
+        src/utility/styles.cpp
 
         # qml
         src/qml/qml.qrc

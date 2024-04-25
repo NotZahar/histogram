@@ -1,20 +1,17 @@
 #include <QGuiApplication>
 
 #include "config/settings.hpp"
-#include "app_states/state_manager.hpp"
-#include "app_states/init_state.hpp"
-#include "services/storage.hpp"
+#include "services/register_types_service.hpp"
+#include "services/states_service.hpp"
 
 int main(int argc, char** argv) {
     QCoreApplication::setOrganizationName(hist::settings::organizationName);
     QCoreApplication::setApplicationName(hist::settings::applicationName);
 
     QGuiApplication app(argc, argv);
-    hist::Storage::instance().setAppPtr(&app);
 
-    auto& stateManager = hist::StateManager::instance();
-    stateManager.addNewState(std::make_unique<hist::InitState>());
-    stateManager.init(hist::state::init);
+    hist::RegisterTypesService::instance();
+    hist::StatesService::instance();
 
     return app.exec();
 }

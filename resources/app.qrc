@@ -1,13 +1,5 @@
 <RCC>
     <qresource prefix="/img">
-        <file>assets/arrow.png</file>
-        <file>assets/background.png</file>
-        <file>assets/center.png</file>
-        <file>assets/clock-night.png</file>
-        <file>assets/clock.png</file>
-        <file>assets/hour.png</file>
-        <file>assets/minute.png</file>
-        <file>assets/quit.png</file>
-        <file>assets/second.png</file>
+        <file>assets/hist-background.jpg</file>
     </qresource>
 </RCC>
