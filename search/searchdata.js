@@ -1,14 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "acdfghimoqrs~П",
-  1: "iqs",
+  0: "abcdfghimoqrstu~П",
+  1: "hiqrsu",
   2: "h",
-  3: "imqrs",
-  4: "acdfgims~",
-  5: "ao",
+  3: "himqrst",
+  4: "abcdfghims~",
+  5: "aho",
   6: "s",
   7: "hi",
-  8: "П"
+  8: "b",
+  9: "h",
+  10: "П"
 };
 
 var indexSectionNames =
@@ -21,7 +23,9 @@ var indexSectionNames =
   5: "variables",
   6: "enums",
   7: "enumvalues",
-  8: "pages"
+  8: "properties",
+  9: "defines",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +38,8 @@ var indexSectionLabels =
   5: "Переменные",
   6: "Перечисления",
   7: "Элементы перечислений",
-  8: "Страницы"
+  8: "Свойства",
+  9: "Макросы",
+  10: "Страницы"
 };
 

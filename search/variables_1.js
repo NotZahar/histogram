@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['organizationname_93',['organizationName',['../structhist_1_1settings.html#a5c0a4a305467c2ec16f00bf1cffcc0b2',1,'hist::settings']]]
+  ['hasinstance_126',['HasInstance',['../namespacehist.html#ab6dcfc302a9718c763b6df4fde84309c',1,'hist']]]
 ];

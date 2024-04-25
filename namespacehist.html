@@ -64,13 +64,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Пространства имен</a> &#124;
 <a href="#nested-classes">Классы</a> &#124;
-<a href="#enum-members">Перечисления</a>  </div>
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Пространство имен hist</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacehist_1_1types"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehist_1_1types.html">types</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1InitState.html">InitState</a></td></tr>
@@ -85,7 +92,13 @@ $(function() {
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1QMLService.html">QMLService</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1RegisterTypesService.html">RegisterTypesService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1StatesService.html">StatesService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1Storage.html">Storage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1Styles.html">Styles</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -95,6 +108,12 @@ $(function() {
 , <a class="el" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6fabdfb01f3ea1f6351d0d53d79625c347f">histogram</a>
  }</td></tr>
 <tr class="separator:a0fc42dfd2f5b90aa63c8c886dca55e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ab6dcfc302a9718c763b6df4fde84309c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab6dcfc302a9718c763b6df4fde84309c"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehist.html#ab6dcfc302a9718c763b6df4fde84309c">HasInstance</a></td></tr>
+<tr class="separator:ab6dcfc302a9718c763b6df4fde84309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Перечисления</h2>
 <a id="a0fc42dfd2f5b90aa63c8c886dca55e6f"></a>
@@ -122,6 +141,27 @@ $(function() {
 <tr><td class="fieldname"><a id="a0fc42dfd2f5b90aa63c8c886dca55e6fabdfb01f3ea1f6351d0d53d79625c347f"></a>histogram&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ab6dcfc302a9718c763b6df4fde84309c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6dcfc302a9718c763b6df4fde84309c">&#9670;&nbsp;</a></span>HasInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept hist::HasInstance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">=</div>
+<div class="line">        requires(T) {</div>
+<div class="line">            { T::instance() } -&gt; std::convertible_to&lt;T&amp;&gt;;</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['finish_75',['finish',['../classhist_1_1InitState.html#a6c9482514b6d52011266dbf300e3b58a',1,'hist::InitState::finish()'],['../classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef',1,'hist::State::finish()']]]
+  ['done_108',['done',['../classhist_1_1InitController.html#aa09e1b8947b1710ee3731b3369b8d0f1',1,'hist::InitController']]]
 ];
