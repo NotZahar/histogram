@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['utility_60',['utility',['../structhist_1_1types_1_1utility.html',1,'hist::types']]]
+  ['secondary_5fc_51',['secondary_c',['../classhist_1_1Styles.html#a5028329a1032af9a5acd258a3e59a08f',1,'hist::Styles::secondary_c() const noexcept'],['../classhist_1_1Styles.html#a2e1ca2037f6f30ebc72f33f25b60ee77',1,'hist::Styles::secondary_c()']]],
+  ['setstateascurrent_52',['setStateAsCurrent',['../classhist_1_1StateManager.html#ab0b9ed0165a6231424762603ec14e1ed',1,'hist::StateManager']]],
+  ['settings_53',['settings',['../structhist_1_1settings.html',1,'hist']]],
+  ['settings_2ehpp_54',['settings.hpp',['../settings_8hpp.html',1,'']]],
+  ['standardmargin_55',['standardMargin',['../classhist_1_1Styles.html#ab461fb6e77533c2634ea9926a7cdaa2f',1,'hist::Styles::standardMargin() const noexcept'],['../classhist_1_1Styles.html#a3d485f03b52123a9fb86f0bb40091ca8',1,'hist::Styles::standardMargin()']]],
+  ['standardradius_56',['standardRadius',['../classhist_1_1Styles.html#a3e476d60f0ce4db3836a29d668be540b',1,'hist::Styles::standardRadius() const noexcept'],['../classhist_1_1Styles.html#a79f62efd810899173246b07d951e14d2',1,'hist::Styles::standardRadius()']]],
+  ['start_57',['start',['../classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc',1,'hist::State::start()'],['../classhist_1_1InitState.html#a921cd7b800838062f9d9892360d02f15',1,'hist::InitState::start()'],['../classhist_1_1HistState.html#a27af280cc82d8851f1e4c946f12a365a',1,'hist::HistState::start()']]],
+  ['state_58',['State',['../classhist_1_1State.html',1,'hist']]],
+  ['state_59',['state',['../namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f',1,'hist']]],
+  ['state_60',['State',['../classhist_1_1State.html#a7b25d0ed2bbaa82b0ea7e61cbe7a9126',1,'hist::State::State(const state stateId, QObject *parent=nullptr) noexcept'],['../classhist_1_1State.html#a45b20f8c53cfced58ba309e02f4801c6',1,'hist::State::State()=delete']]],
+  ['state_2ecpp_61',['state.cpp',['../state_8cpp.html',1,'']]],
+  ['state_2ehpp_62',['state.hpp',['../state_8hpp.html',1,'']]],
+  ['state_5fmanager_2ecpp_63',['state_manager.cpp',['../state__manager_8cpp.html',1,'']]],
+  ['state_5fmanager_2ehpp_64',['state_manager.hpp',['../state__manager_8hpp.html',1,'']]],
+  ['stateexists_65',['stateExists',['../classhist_1_1StateManager.html#a25e7c914440525dd96d5572e35039b10',1,'hist::StateManager']]],
+  ['statemanager_66',['StateManager',['../classhist_1_1StateManager.html',1,'hist']]],
+  ['states_2ehpp_67',['states.hpp',['../states_8hpp.html',1,'']]],
+  ['states_5fservice_2ecpp_68',['states_service.cpp',['../states__service_8cpp.html',1,'']]],
+  ['states_5fservice_2ehpp_69',['states_service.hpp',['../states__service_8hpp.html',1,'']]],
+  ['statesservice_70',['StatesService',['../classhist_1_1StatesService.html',1,'hist']]],
+  ['storage_71',['Storage',['../classhist_1_1Storage.html',1,'hist']]],
+  ['storage_2ecpp_72',['storage.cpp',['../storage_8cpp.html',1,'']]],
+  ['storage_2ehpp_73',['storage.hpp',['../storage_8hpp.html',1,'']]],
+  ['styles_74',['Styles',['../classhist_1_1Styles.html',1,'hist']]],
+  ['styles_2ecpp_75',['styles.cpp',['../styles_8cpp.html',1,'']]],
+  ['styles_2ehpp_76',['styles.hpp',['../styles_8hpp.html',1,'']]]
 ];

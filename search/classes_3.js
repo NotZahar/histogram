@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registertypesservice_69',['RegisterTypesService',['../classhist_1_1RegisterTypesService.html',1,'hist']]]
+  ['qmlservice_92',['QMLService',['../classhist_1_1QMLService.html',1,'hist']]]
 ];

@@ -1,26 +1,6 @@
 var searchData=
 [
-  ['setstateascurrent_36',['setStateAsCurrent',['../classhist_1_1StateManager.html#ab0b9ed0165a6231424762603ec14e1ed',1,'hist::StateManager']]],
-  ['settings_37',['settings',['../structhist_1_1settings.html',1,'hist']]],
-  ['settings_2ehpp_38',['settings.hpp',['../settings_8hpp.html',1,'']]],
-  ['start_39',['start',['../classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc',1,'hist::State::start()'],['../classhist_1_1InitState.html#a921cd7b800838062f9d9892360d02f15',1,'hist::InitState::start()']]],
-  ['state_40',['State',['../classhist_1_1State.html',1,'hist']]],
-  ['state_41',['state',['../namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f',1,'hist']]],
-  ['state_42',['State',['../classhist_1_1State.html#a7b25d0ed2bbaa82b0ea7e61cbe7a9126',1,'hist::State::State(const state stateId, QObject *parent=nullptr) noexcept'],['../classhist_1_1State.html#a45b20f8c53cfced58ba309e02f4801c6',1,'hist::State::State()=delete']]],
-  ['state_2ecpp_43',['state.cpp',['../state_8cpp.html',1,'']]],
-  ['state_2ehpp_44',['state.hpp',['../state_8hpp.html',1,'']]],
-  ['state_5fmanager_2ecpp_45',['state_manager.cpp',['../state__manager_8cpp.html',1,'']]],
-  ['state_5fmanager_2ehpp_46',['state_manager.hpp',['../state__manager_8hpp.html',1,'']]],
-  ['stateexists_47',['stateExists',['../classhist_1_1StateManager.html#a25e7c914440525dd96d5572e35039b10',1,'hist::StateManager']]],
-  ['statemanager_48',['StateManager',['../classhist_1_1StateManager.html',1,'hist']]],
-  ['states_2ehpp_49',['states.hpp',['../states_8hpp.html',1,'']]],
-  ['states_5fservice_2ecpp_50',['states_service.cpp',['../states__service_8cpp.html',1,'']]],
-  ['states_5fservice_2ehpp_51',['states_service.hpp',['../states__service_8hpp.html',1,'']]],
-  ['statesservice_52',['StatesService',['../classhist_1_1StatesService.html',1,'hist']]],
-  ['storage_53',['Storage',['../classhist_1_1Storage.html',1,'hist']]],
-  ['storage_2ecpp_54',['storage.cpp',['../storage_8cpp.html',1,'']]],
-  ['storage_2ehpp_55',['storage.hpp',['../storage_8hpp.html',1,'']]],
-  ['styles_56',['Styles',['../classhist_1_1Styles.html',1,'hist']]],
-  ['styles_2ecpp_57',['styles.cpp',['../styles_8cpp.html',1,'']]],
-  ['styles_2ehpp_58',['styles.hpp',['../styles_8hpp.html',1,'']]]
+  ['qml_5fservice_2ecpp_44',['qml_service.cpp',['../qml__service_8cpp.html',1,'']]],
+  ['qml_5fservice_2ehpp_45',['qml_service.hpp',['../qml__service_8hpp.html',1,'']]],
+  ['qmlservice_46',['QMLService',['../classhist_1_1QMLService.html',1,'hist']]]
 ];

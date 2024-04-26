@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_32',['README.md',['../README_8md.html',1,'']]],
-  ['register_5ftypes_5fservice_2ecpp_33',['register_types_service.cpp',['../register__types__service_8cpp.html',1,'']]],
-  ['register_5ftypes_5fservice_2ehpp_34',['register_types_service.hpp',['../register__types__service_8hpp.html',1,'']]],
-  ['registertypesservice_35',['RegisterTypesService',['../classhist_1_1RegisterTypesService.html',1,'hist']]]
+  ['primary_5fc_43',['primary_c',['../classhist_1_1Styles.html#a9b7572fee5f7e89cf461d4ddc03f899f',1,'hist::Styles::primary_c()'],['../classhist_1_1Styles.html#aac3fd6a0d33673f9f955c8307ccceeb0',1,'hist::Styles::primary_c() const noexcept']]]
 ];

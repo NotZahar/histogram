@@ -98,18 +98,18 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">const</span> std::string name) <span class="keyword">const</span> noexcept {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            qmlRegisterSingletonType&lt;T&gt;(uri.c_str(), major, minor, name.c_str(),</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                [](QQmlEngine*, QJSEngine*) -&gt; QObject* {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    T&amp; singleton = T::instance();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    QQmlEngine::setObjectOwnership(&amp;singleton, QQmlEngine::CppOwnership);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    T* singleton = &amp;T::instance();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    QQmlEngine::setObjectOwnership(singleton, QQmlEngine::CppOwnership);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    return &amp;singleton;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    return singleton;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            );</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="ttc" id="aclasshist_1_1RegisterTypesService_html"><div class="ttname"><a href="classhist_1_1RegisterTypesService.html">hist::RegisterTypesService</a></div><div class="ttdef"><b>Definition:</b> register_types_service.hpp:9</div></div>
-<div class="ttc" id="aclasshist_1_1RegisterTypesService_html_afd6700e45ace0e10ff5d648e67c0dc76"><div class="ttname"><a href="classhist_1_1RegisterTypesService.html#afd6700e45ace0e10ff5d648e67c0dc76">hist::RegisterTypesService::instance</a></div><div class="ttdeci">static RegisterTypesService &amp; instance() noexcept</div><div class="ttdef"><b>Definition:</b> register_types_service.cpp:14</div></div>
-<div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> init_state.cpp:6</div></div>
+<div class="ttc" id="aclasshist_1_1RegisterTypesService_html_afd6700e45ace0e10ff5d648e67c0dc76"><div class="ttname"><a href="classhist_1_1RegisterTypesService.html#afd6700e45ace0e10ff5d648e67c0dc76">hist::RegisterTypesService::instance</a></div><div class="ttdeci">static RegisterTypesService &amp; instance() noexcept</div><div class="ttdef"><b>Definition:</b> register_types_service.cpp:16</div></div>
+<div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> hist_state.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
