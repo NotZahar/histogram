@@ -29,10 +29,12 @@ qt_add_executable(
         src/app_states/init_state.cpp
         src/app_states/hist_state.cpp
         src/controllers/init_controller.cpp
+        src/controllers/hist_controller.cpp
         src/services/qml_service.cpp
         src/services/storage.cpp
         src/services/register_types_service.cpp
         src/services/states_service.cpp
+        src/services/navigation_service.cpp
         src/utility/styles.cpp
 
         # qml

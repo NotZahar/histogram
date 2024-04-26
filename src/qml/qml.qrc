@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/qml">
-        <file>pages/Main.qml</file>
         <file>components/Histogram.qml</file>
+        <file>pages/Hist.qml</file>
+        <file>pages/Main.qml</file>
+        <file>components/HButton.qml</file>
+        <file>components/HProgressBar.qml</file>
     </qresource>
 </RCC>

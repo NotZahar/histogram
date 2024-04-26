@@ -1,16 +1,17 @@
 import QtQuick
 import QtQuick.Controls
 
-import H_Utility 1.0
+import Hist.Utility 1.0
+import Hist.Navigation 1.0
 
 Page {
-    id: mainWindow
+    id: mainPage
 
     readonly property real _initialWidth: 900
     readonly property real _initialHeight: 600
 
-    width: mainWindow._initialWidth
-    height: mainWindow._initialHeight
+    width: mainPage._initialWidth
+    height: mainPage._initialHeight
 
     Rectangle {
         id: backgroundItemColor
@@ -19,34 +20,42 @@ Page {
         color: Styles.background_c
     }
 
-    StackView {
-        id: navigationStack
+    Component {
+        id: startComponent
 
-        anchors.fill: parent
-        initialItem: mainView
+        Item {
+            width: mainPage.width
+            height: mainPage.height
+        }
     }
 
-    Component {
-       id: mainView
+    StackView {
+        id: pageNavigationStack
 
-       Row {
-           spacing: 10
+        anchors.fill: parent
+        initialItem: startComponent
+        pushEnter: pageTransition
+        pushExit: pageTransition
+        popEnter: pageTransition
+        popExit: pageTransition
+    }
 
-           Button {
-               text: "Push"
-               onClicked: navigationStack.push(mainView)
-           }
+    Transition {
+        id: pageTransition
 
-           Button {
-               text: "Pop"
-               enabled: navigationStack.depth > 1
-               onClicked: navigationStack.pop()
+        PropertyAnimation {
+            property: "opacity"
+            from: 0
+            to: 1
+            duration: 200
+        }
+    }
 
-           }
+    Connections {
+        target: NavigationService
 
-           Text {
-               text: navigationStack.depth
-           }
-       }
+        function onChangePage(pagePath: string) {
+            pageNavigationStack.push(pagePath)
+        }
     }
 }

@@ -1,11 +1,24 @@
-#ifndef HISTSTATE_HPP
-#define HISTSTATE_HPP
+#pragma once
 
+#include "state.hpp"
+#include "../controllers/hist_controller.hpp"
 
-class HistState
-{
-public:
-    HistState();
-};
+namespace hist {
+    class HistState final : public State {
+        Q_OBJECT
 
-#endif // HISTSTATE_HPP
+    public:
+        explicit HistState(QObject* parent = nullptr) noexcept;
+
+        ~HistState() override = default;
+
+        void start() noexcept override;
+        void finish() noexcept override;
+
+//    private slots:
+//        void onHistogramTransfer();
+
+    private:
+        HistController _histController;
+    };
+}

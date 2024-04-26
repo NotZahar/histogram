@@ -25,10 +25,10 @@ namespace hist {
                 const std::string name) const noexcept {
             qmlRegisterSingletonType<T>(uri.c_str(), major, minor, name.c_str(),
                 [](QQmlEngine*, QJSEngine*) -> QObject* {
-                    T& singleton = T::instance();
-                    QQmlEngine::setObjectOwnership(&singleton, QQmlEngine::CppOwnership);
+                    T* singleton = &T::instance();
+                    QQmlEngine::setObjectOwnership(singleton, QQmlEngine::CppOwnership);
 
-                    return &singleton;
+                    return singleton;
                 }
             );
         }

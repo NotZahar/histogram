@@ -9,6 +9,10 @@ namespace hist::types {
         inline static const int minor = _minor;
 
     struct utility {
-        H_MODULE_INFO("H_Utility", 1, 0)
+        H_MODULE_INFO("Hist.Utility", 1, 0)
+    };
+
+    struct navigation {
+        H_MODULE_INFO("Hist.Navigation", 1, 0)
     };
 }
