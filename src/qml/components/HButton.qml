@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 
-import Hist.Utility 1.0
+import Hist.UI 1.0
 
 Button {
     id: hButton

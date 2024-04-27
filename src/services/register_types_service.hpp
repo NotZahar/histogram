@@ -7,9 +7,9 @@
 
 namespace hist {
     class RegisterTypesService final {
-    public:
         Q_DISABLE_COPY_MOVE(RegisterTypesService)
 
+    public:
         static RegisterTypesService& instance() noexcept;
 
     private:
@@ -17,7 +17,7 @@ namespace hist {
 
         ~RegisterTypesService() = default;
 
-        template <HasInstance T>
+        template <Instanceable T>
         void registerSingletonType(
                 const std::string uri,
                 const int major,

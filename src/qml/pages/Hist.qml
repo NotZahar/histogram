@@ -1,7 +1,7 @@
 import QtQuick
 import Qt5Compat.GraphicalEffects
 
-import Hist.Utility 1.0
+import Hist.UI 1.0
 
 import "../components" as HistComponents
 

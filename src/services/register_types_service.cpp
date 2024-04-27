@@ -9,7 +9,7 @@ namespace hist {
     {
         using namespace types;
 
-        registerSingletonType<Styles>(utility::uri, utility::major, utility::minor, "Styles");
+        registerSingletonType<Styles>(ui::uri, ui::major, ui::minor, "Styles");
         registerSingletonType<NavigationService>(navigation::uri, navigation::major, navigation::minor, "NavigationService");
     }
 

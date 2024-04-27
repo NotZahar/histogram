@@ -4,9 +4,9 @@
 
 namespace hist {
     class StatesService final {
-    public:
         Q_DISABLE_COPY_MOVE(StatesService)
 
+    public:
         static StatesService& instance() noexcept;
 
     private:

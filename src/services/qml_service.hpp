@@ -7,9 +7,9 @@
 
 namespace hist {
     class QMLService final {
-    public:
         Q_DISABLE_COPY_MOVE(QMLService)
 
+    public:
         static QMLService& instance() noexcept;
         void init() noexcept;
 

@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 
-#include "config/settings.hpp"
+#include "utility/settings.hpp"
 #include "services/register_types_service.hpp"
 #include "services/states_service.hpp"
 

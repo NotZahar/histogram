@@ -8,8 +8,8 @@ namespace hist::types {
         inline static const int major = _major; \
         inline static const int minor = _minor;
 
-    struct utility {
-        H_MODULE_INFO("Hist.Utility", 1, 0)
+    struct ui {
+        H_MODULE_INFO("Hist.UI", 1, 0)
     };
 
     struct navigation {

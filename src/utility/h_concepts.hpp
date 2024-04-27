@@ -2,7 +2,7 @@
 
 namespace hist {
     template<class T>
-    concept HasInstance =
+    concept Instanceable =
         requires(T) {
             { T::instance() } -> std::convertible_to<T&>;
         };
