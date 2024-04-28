@@ -24,18 +24,30 @@ qt_add_executable(
     ${PROJECT_NAME}
         # cpp
         src/main.cpp
+
+        # cpp states
         src/app_states/state.cpp
         src/app_states/state_manager.cpp
         src/app_states/init_state.cpp
         src/app_states/hist_state.cpp
+
+        # cpp controllers
         src/controllers/init_controller.cpp
         src/controllers/hist_controller.cpp
+        src/controllers/hist_page_controller.cpp
+
+        # cpp models
+        src/models/hist_model.cpp
+
+        # cpp services
         src/services/qml_service.cpp
-        src/services/storage.cpp
         src/services/register_types_service.cpp
         src/services/states_service.cpp
         src/services/navigation_service.cpp
+
+        # cpp utility
         src/utility/styles.cpp
+        src/utility/messages.cpp
 
         # qml
         src/qml/qml.qrc

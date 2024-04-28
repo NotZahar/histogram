@@ -2,8 +2,10 @@ import QtQuick
 import Qt5Compat.GraphicalEffects
 
 import Hist.UI 1.0
+import Hist.Control 1.0
 
 import "../components" as HistComponents
+import "../components/controllers" as HistControllers
 
 Item {
     id: histogramPage
@@ -60,33 +62,39 @@ Item {
                 width: parent.width
                 height: Styles.defaultButtonHeight
 
-                HistComponents.HButton {
-                    id: openBtn
+                Row {
+                    id: leftButtonsRow
 
-                    text: "Открыть" // TODO
+                    spacing: Styles.defaultSpacing
 
-                    onClicked: console.log("1") // TODO
-                }
+                    HistComponents.HButton {
+                        id: openBtn
 
-                HistComponents.HButton {
-                    id: startBtn
+                        enabled: HistPageController.openEnabled
+                        text: Messages.open_btn
+                        backgroundColor: Styles.darkGray_c
 
-                    anchors {
-                        left: openBtn.right
-                        leftMargin: Styles.defaultSpacing
+                        onClicked: fsDialog.open()
                     }
-                    text: "Старт" // TODO
 
-                    onClicked: console.log("2") // TODO
+                    HistComponents.HButton {
+                        id: startBtn
+
+                        enabled: HistPageController.startEnabled
+                        text: Messages.start_btn
+
+                        onClicked: HistPageController.onStarted()
+                    }
                 }
 
                 HistComponents.HButton {
                     id: cancelBtn
 
+                    enabled: HistPageController.cancelEnabled
                     anchors.right: parent.right
-                    text: "Отмена" // TODO
+                    text: Messages.cancel_btn
 
-                    onClicked: console.log("3") // TODO
+                    onClicked: HistPageController.onCanceled()
                 }
             }
 
@@ -95,8 +103,15 @@ Item {
 
                 width: parent.width
                 height: Styles.defaultButtonHeight
-                value: 0.5 // TODO
             }
+        }
+    }
+
+    HistControllers.HFileSystemDialogControl {
+        id: fsDialog
+
+        onSelectedFileChanged: {
+            HistPageController.onFileSelected(fsDialog.selectedFile)
         }
     }
 }

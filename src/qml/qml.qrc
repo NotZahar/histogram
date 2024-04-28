@@ -1,9 +1,10 @@
 <RCC>
     <qresource prefix="/qml">
-        <file>components/Histogram.qml</file>
-        <file>pages/Hist.qml</file>
-        <file>pages/Main.qml</file>
         <file>components/HButton.qml</file>
         <file>components/HProgressBar.qml</file>
+        <file>components/Histogram.qml</file>
+        <file>components/controllers/HFileSystemDialogControl.qml</file>
+        <file>pages/Hist.qml</file>
+        <file>pages/Main.qml</file>
     </qresource>
 </RCC>

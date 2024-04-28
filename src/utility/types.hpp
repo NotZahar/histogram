@@ -15,4 +15,8 @@ namespace hist::types {
     struct navigation {
         H_MODULE_INFO("Hist.Navigation", 1, 0)
     };
+
+    struct controller {
+        H_MODULE_INFO("Hist.Control", 1, 0)
+    };
 }
