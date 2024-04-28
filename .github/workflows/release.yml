@@ -33,8 +33,21 @@ jobs:
               qml6-module-qtquick-dialogs
       - run: sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13 --slave /usr/bin/g++ g++ /usr/bin/g++-13
 
+      - name: Install Boost
+        uses: MarkusJx/install-boost@v2.4.4
+        id: install_boost
+        with:
+            boost_version: 1.82.0
+            platform_version: 22.04
+            boost_install_dir: /home/runner/boost
+            toolset: gcc
+
       - uses: actions/checkout@v3
       - run: cmake -DCMAKE_BUILD_TYPE=Release -DPATCH_VERSION=${{ github.run_number }} .
+            -DBoost_INCLUDE_DIR=${{steps.install_boost.outputs.BOOST_ROOT}}/include
+            -DBoost_LIBRARY_DIRS=${{steps.install_boost.outputs.BOOST_ROOT}}/lib
+        env:
+            BOOST_ROOT: ${{ steps.install_boost.outputs.BOOST_ROOT }}
       - run: cmake --build . --target install
       - run: cmake --build . --target package
       

@@ -1,16 +1,27 @@
 #include "hist_page_controller.hpp"
 
+#include <QDebug> // TODO:
+
 namespace hist {
     HistPageController::HistPageController(QObject* parent) noexcept
         : QObject{ parent },
           _openEnabled{ true },
           _startEnabled{ true },
-          _cancelEnabled{ true }
+          _cancelEnabled{ true },
+          _processProgressValue{ 0 }
     {}
+
 
     HistPageController& HistPageController::instance() noexcept {
         static HistPageController instance;
         return instance;
+    }
+
+    void HistPageController::setProcessProgressValue(int value) noexcept {
+        if (_processProgressValue == value)
+            return;
+        _processProgressValue = value;
+        emit processProgressValueChanged();
     }
 
     bool HistPageController::openEnabled() const noexcept {
@@ -46,6 +57,10 @@ namespace hist {
         emit cancelEnabledChanged();
     }
 
+    int HistPageController::processProgressValue() const noexcept {
+        return _processProgressValue;
+    }
+
     void HistPageController::onFileSelected(QUrl path) noexcept {
         emit fileSelected(path);
     }
@@ -58,5 +73,14 @@ namespace hist {
 
     void HistPageController::onCanceled() noexcept {
         // TODO: Implement!
+    }
+
+    void HistPageController::onFileSizeChanged(qint64 size) noexcept {
+        // TODO: [here]
+        setProcessProgressValue();
+    }
+
+    void HistPageController::onHandleWord(QString word) noexcept {
+        qDebug() << word;
     }
 }

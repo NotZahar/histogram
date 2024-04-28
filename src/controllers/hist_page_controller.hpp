@@ -8,6 +8,7 @@ namespace hist {
         Q_PROPERTY(bool openEnabled READ openEnabled WRITE setOpenEnabled NOTIFY openEnabledChanged)
         Q_PROPERTY(bool startEnabled READ startEnabled WRITE setStartEnabled NOTIFY startEnabledChanged)
         Q_PROPERTY(bool cancelEnabled READ cancelEnabled WRITE setCancelEnabled NOTIFY cancelEnabledChanged)
+        Q_PROPERTY(int processProgressValue READ processProgressValue NOTIFY processProgressValueChanged)
 
     public:
         static HistPageController& instance() noexcept;
@@ -21,6 +22,8 @@ namespace hist {
         bool cancelEnabled() const noexcept;
         void setCancelEnabled(bool enabled) noexcept;
 
+        int processProgressValue() const noexcept;
+
     signals:
         void fileSelected(QUrl path);
         void startRead();
@@ -29,18 +32,26 @@ namespace hist {
         void startEnabledChanged();
         void cancelEnabledChanged();
 
+        void processProgressValueChanged();
+
     public slots:
         void onFileSelected(QUrl path) noexcept;
         void onStarted() noexcept;
         void onCanceled() noexcept;
+        void onFileSizeChanged(qint64 size) noexcept;
+        void onHandleWord(QString word) noexcept;
 
     private:
         explicit HistPageController(QObject* parent = nullptr) noexcept;
 
         ~HistPageController() = default;
 
+        void setProcessProgressValue(int value) noexcept;
+
         bool _openEnabled;
         bool _startEnabled;
         bool _cancelEnabled;
+
+        int _processProgressValue;
     };
 }

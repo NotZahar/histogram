@@ -20,6 +20,12 @@ find_package(
             Quick
 )
 
+find_package(
+    Boost 1.82 REQUIRED 
+        COMPONENTS 
+            system
+)
+
 qt_add_executable(
     ${PROJECT_NAME}
         # cpp
@@ -48,6 +54,7 @@ qt_add_executable(
         # cpp utility
         src/utility/styles.cpp
         src/utility/messages.cpp
+        src/utility/thread_pool.cpp
 
         # qml
         src/qml/qml.qrc
@@ -63,6 +70,7 @@ target_link_libraries(
             Qt6::Gui
             Qt6::Qml
             Qt6::Quick
+            ${Boost_LIBRARIES}
 )
 
 if(CMAKE_COMPILER_IS_GNUCXX)

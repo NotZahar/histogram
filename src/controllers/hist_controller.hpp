@@ -3,6 +3,7 @@
 #include <memory>
 
 #include <QObject>
+#include <QRegularExpression>
 
 #include "../models/hist_model.hpp"
 
@@ -17,10 +18,15 @@ namespace hist {
 
         void init() noexcept;
 
+    signals:
+        void fileSizeChanged(qint64 size);
+        void handleWord(QString word);
+
     private:
         void saveSelectedFilePath(QUrl path) noexcept;
         void read() noexcept;
 
         std::unique_ptr<model::HistModel> _model;
+        const QRegularExpression _nonWordRegExp;
     };
 }

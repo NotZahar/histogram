@@ -101,6 +101,7 @@ Item {
             HistComponents.HProgressBar {
                 id: readProgressBar
 
+                value: HistPageController.processProgressValue
                 width: parent.width
                 height: Styles.defaultButtonHeight
             }
