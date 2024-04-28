@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['_7ehistcontroller_205',['~HistController',['../classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101',1,'hist::HistController']]],
-  ['_7ehistmodel_206',['~HistModel',['../classhist_1_1model_1_1HistModel.html#a05469a1eace6f41ddd8d605ef540cc17',1,'hist::model::HistModel']]],
-  ['_7ehiststate_207',['~HistState',['../classhist_1_1HistState.html#aa12599ce5ae5f42963ffc930516df611',1,'hist::HistState']]],
-  ['_7einitcontroller_208',['~InitController',['../classhist_1_1InitController.html#a7d1b49088e0ec5174c4336c1bc2a4f36',1,'hist::InitController']]],
-  ['_7einitstate_209',['~InitState',['../classhist_1_1InitState.html#a23a7f3e00f8fff33d5d071777950e667',1,'hist::InitState']]],
-  ['_7estate_210',['~State',['../classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7',1,'hist::State']]]
+  ['setcancelenabled_218',['setCancelEnabled',['../classhist_1_1HistPageController.html#a3f0c08965bdfbcfcc17e782b7ccd0930',1,'hist::HistPageController']]],
+  ['setopenenabled_219',['setOpenEnabled',['../classhist_1_1HistPageController.html#a5e47d651dd9de97f166da9df76e34495',1,'hist::HistPageController']]],
+  ['setselectedfilepath_220',['setSelectedFilePath',['../classhist_1_1model_1_1HistModel.html#ab29cd55138fc03f27f70ecd1593220e3',1,'hist::model::HistModel']]],
+  ['setstartenabled_221',['setStartEnabled',['../classhist_1_1HistPageController.html#a26584a992e46e43efb54c24d51e9684e',1,'hist::HistPageController']]],
+  ['setstateascurrent_222',['setStateAsCurrent',['../classhist_1_1StateManager.html#ab0b9ed0165a6231424762603ec14e1ed',1,'hist::StateManager']]],
+  ['start_223',['start',['../classhist_1_1HistState.html#a27af280cc82d8851f1e4c946f12a365a',1,'hist::HistState::start()'],['../classhist_1_1InitState.html#a921cd7b800838062f9d9892360d02f15',1,'hist::InitState::start()'],['../classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc',1,'hist::State::start()']]],
+  ['startenabled_224',['startEnabled',['../classhist_1_1HistPageController.html#a0edde5119ca47e66433ba2d4d5862367',1,'hist::HistPageController']]],
+  ['startenabledchanged_225',['startEnabledChanged',['../classhist_1_1HistPageController.html#a3e31b22338e99f7d3072cdf856e48689',1,'hist::HistPageController']]],
+  ['startread_226',['startRead',['../classhist_1_1HistPageController.html#ac908d217601d7e2471ab414ef0d44ca2',1,'hist::HistPageController']]],
+  ['state_227',['State',['../classhist_1_1State.html#a45b20f8c53cfced58ba309e02f4801c6',1,'hist::State::State()=delete'],['../classhist_1_1State.html#a7b25d0ed2bbaa82b0ea7e61cbe7a9126',1,'hist::State::State(const state stateId, QObject *parent=nullptr) noexcept']]],
+  ['stateexists_228',['stateExists',['../classhist_1_1StateManager.html#a25e7c914440525dd96d5572e35039b10',1,'hist::StateManager']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gray_5fc_245',['gray_c',['../classhist_1_1Styles.html#a55d1b2f4a1095aa085c137b7bf1ef003',1,'hist::Styles']]]
+  ['gray_5fc_272',['gray_c',['../classhist_1_1Styles.html#a55d1b2f4a1095aa085c137b7bf1ef003',1,'hist::Styles']]]
 ];
