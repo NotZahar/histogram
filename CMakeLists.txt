@@ -63,6 +63,12 @@ qt_add_executable(
         resources/app.qrc
 )
 
+target_include_directories(
+    ${PROJECT_NAME}
+        PRIVATE
+            ${Boost_INCLUDE_DIR}
+)
+
 target_link_libraries(
     ${PROJECT_NAME}
         PRIVATE
@@ -72,6 +78,8 @@ target_link_libraries(
             Qt6::Quick
             ${Boost_LIBRARIES}
 )
+
+file(COPY resources/test DESTINATION ${CMAKE_BINARY_DIR})
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Werror -pedantic)

@@ -11,7 +11,6 @@ namespace hist {
           _processProgressValue{ 0 }
     {}
 
-
     HistPageController& HistPageController::instance() noexcept {
         static HistPageController instance;
         return instance;
@@ -75,9 +74,9 @@ namespace hist {
         // TODO: Implement!
     }
 
-    void HistPageController::onFileSizeChanged(qint64 size) noexcept {
+    void HistPageController::onFileSizeChanged(qint64 /*size*/) noexcept {
         // TODO: [here]
-        setProcessProgressValue();
+//        setProcessProgressValue();
     }
 
     void HistPageController::onHandleWord(QString word) noexcept {
