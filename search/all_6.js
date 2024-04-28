@@ -18,6 +18,5 @@ var searchData=
   ['histpagecontroller_40',['HistPageController',['../classhist_1_1HistPageController.html',1,'hist']]],
   ['histstate_41',['HistState',['../classhist_1_1HistState.html',1,'hist::HistState'],['../classhist_1_1HistState.html#a4755184e5bb3171e210025d62afa0c0f',1,'hist::HistState::HistState()']]],
   ['model_42',['model',['../namespacehist_1_1model.html',1,'hist']]],
-  ['tools_43',['tools',['../namespacehist_1_1tools.html',1,'hist']]],
-  ['types_44',['types',['../namespacehist_1_1types.html',1,'hist']]]
+  ['types_43',['types',['../namespacehist_1_1types.html',1,'hist']]]
 ];

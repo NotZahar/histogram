@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['threadpool_145',['ThreadPool',['../classhist_1_1tools_1_1ThreadPool.html',1,'hist::tools']]]
+  ['ui_143',['ui',['../structhist_1_1types_1_1ui.html',1,'hist::types']]]
 ];
