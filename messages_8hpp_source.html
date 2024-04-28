@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>histogram: Исходный файл src/utility/messages.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">histogram
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Приложение для вывода частоты встречи слов в файле</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0619a8f54b4fad7043a6de45be8fde0b.html">utility</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">messages.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="messages_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="classhist_1_1Messages.html#a487b1d858f10b70b86f39bad0b0030eb">    1</a></span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehist.html">hist</a> {</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classhist_1_1Messages.html">    5</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhist_1_1Messages.html">Messages</a> final : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        Q_PROPERTY(QString <a class="code" href="classhist_1_1Messages.html#a1f0c447af31d1c3035fd1204d64e5e4f">open_btn</a> MEMBER <a class="code" href="classhist_1_1Messages.html#a1f0c447af31d1c3035fd1204d64e5e4f">open_btn</a> CONSTANT)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        Q_PROPERTY(QString <a class="code" href="classhist_1_1Messages.html#af73e7b869c74b0e96c4da6f95557eda3">start_btn</a> MEMBER <a class="code" href="classhist_1_1Messages.html#af73e7b869c74b0e96c4da6f95557eda3">start_btn</a> CONSTANT)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        Q_PROPERTY(QString <a class="code" href="classhist_1_1Messages.html#a487b1d858f10b70b86f39bad0b0030eb">cancel_btn</a> MEMBER <a class="code" href="classhist_1_1Messages.html#a487b1d858f10b70b86f39bad0b0030eb">cancel_btn</a> CONSTANT)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhist_1_1Messages.html">Messages</a>&amp; <a class="code" href="classhist_1_1Messages.html#a94e6f984ba16d95ce866833017d32c91">instance</a>() noexcept;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classhist_1_1Messages.html#aba6c9980b2ed1dd788d1cb442c7d1e5c">   15</a></span>&#160;        <span class="keyword">const</span> QString <a class="code" href="classhist_1_1Messages.html#aba6c9980b2ed1dd788d1cb442c7d1e5c">open_btn</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classhist_1_1Messages.html#ac572a1f66291fd90143c358573320269">   16</a></span>&#160;        <span class="keyword">const</span> QString <a class="code" href="classhist_1_1Messages.html#ac572a1f66291fd90143c358573320269">start_btn</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classhist_1_1Messages.html#a34e8f350466557b4e8bb4c89d5ce3bcf">   17</a></span>&#160;        <span class="keyword">const</span> QString <a class="code" href="classhist_1_1Messages.html#a34e8f350466557b4e8bb4c89d5ce3bcf">cancel_btn</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classhist_1_1Messages.html">Messages</a>(QObject* parent = <span class="keyword">nullptr</span>) noexcept;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        ~<a class="code" href="classhist_1_1Messages.html">Messages</a>() = default;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="aclasshist_1_1Messages_html"><div class="ttname"><a href="classhist_1_1Messages.html">hist::Messages</a></div><div class="ttdef"><b>Definition:</b> messages.hpp:5</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_a1f0c447af31d1c3035fd1204d64e5e4f"><div class="ttname"><a href="classhist_1_1Messages.html#a1f0c447af31d1c3035fd1204d64e5e4f">hist::Messages::open_btn</a></div><div class="ttdeci">QString open_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:8</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_a34e8f350466557b4e8bb4c89d5ce3bcf"><div class="ttname"><a href="classhist_1_1Messages.html#a34e8f350466557b4e8bb4c89d5ce3bcf">hist::Messages::cancel_btn</a></div><div class="ttdeci">const QString cancel_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:17</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_a487b1d858f10b70b86f39bad0b0030eb"><div class="ttname"><a href="classhist_1_1Messages.html#a487b1d858f10b70b86f39bad0b0030eb">hist::Messages::cancel_btn</a></div><div class="ttdeci">QString cancel_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:10</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_a94e6f984ba16d95ce866833017d32c91"><div class="ttname"><a href="classhist_1_1Messages.html#a94e6f984ba16d95ce866833017d32c91">hist::Messages::instance</a></div><div class="ttdeci">static Messages &amp; instance() noexcept</div><div class="ttdef"><b>Definition:</b> messages.cpp:11</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_aba6c9980b2ed1dd788d1cb442c7d1e5c"><div class="ttname"><a href="classhist_1_1Messages.html#aba6c9980b2ed1dd788d1cb442c7d1e5c">hist::Messages::open_btn</a></div><div class="ttdeci">const QString open_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:15</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_ac572a1f66291fd90143c358573320269"><div class="ttname"><a href="classhist_1_1Messages.html#ac572a1f66291fd90143c358573320269">hist::Messages::start_btn</a></div><div class="ttdeci">const QString start_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:16</div></div>
+<div class="ttc" id="aclasshist_1_1Messages_html_af73e7b869c74b0e96c4da6f95557eda3"><div class="ttname"><a href="classhist_1_1Messages.html#af73e7b869c74b0e96c4da6f95557eda3">hist::Messages::start_btn</a></div><div class="ttdeci">QString start_btn</div><div class="ttdef"><b>Definition:</b> messages.hpp:9</div></div>
+<div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> hist_state.cpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

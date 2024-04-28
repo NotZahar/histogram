@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['secondary_5fc_155',['secondary_c',['../classhist_1_1Styles.html#a5028329a1032af9a5acd258a3e59a08f',1,'hist::Styles']]],
-  ['setstateascurrent_156',['setStateAsCurrent',['../classhist_1_1StateManager.html#ab0b9ed0165a6231424762603ec14e1ed',1,'hist::StateManager']]],
-  ['standardmargin_157',['standardMargin',['../classhist_1_1Styles.html#ab461fb6e77533c2634ea9926a7cdaa2f',1,'hist::Styles']]],
-  ['standardradius_158',['standardRadius',['../classhist_1_1Styles.html#a3e476d60f0ce4db3836a29d668be540b',1,'hist::Styles']]],
-  ['start_159',['start',['../classhist_1_1HistState.html#a27af280cc82d8851f1e4c946f12a365a',1,'hist::HistState::start()'],['../classhist_1_1InitState.html#a921cd7b800838062f9d9892360d02f15',1,'hist::InitState::start()'],['../classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc',1,'hist::State::start() noexcept=0']]],
-  ['state_160',['State',['../classhist_1_1State.html#a45b20f8c53cfced58ba309e02f4801c6',1,'hist::State::State()=delete'],['../classhist_1_1State.html#a7b25d0ed2bbaa82b0ea7e61cbe7a9126',1,'hist::State::State(const state stateId, QObject *parent=nullptr) noexcept']]],
-  ['stateexists_161',['stateExists',['../classhist_1_1StateManager.html#a25e7c914440525dd96d5572e35039b10',1,'hist::StateManager']]]
+  ['_7ehistcontroller_205',['~HistController',['../classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101',1,'hist::HistController']]],
+  ['_7ehistmodel_206',['~HistModel',['../classhist_1_1model_1_1HistModel.html#a05469a1eace6f41ddd8d605ef540cc17',1,'hist::model::HistModel']]],
+  ['_7ehiststate_207',['~HistState',['../classhist_1_1HistState.html#aa12599ce5ae5f42963ffc930516df611',1,'hist::HistState']]],
+  ['_7einitcontroller_208',['~InitController',['../classhist_1_1InitController.html#a7d1b49088e0ec5174c4336c1bc2a4f36',1,'hist::InitController']]],
+  ['_7einitstate_209',['~InitState',['../classhist_1_1InitState.html#a23a7f3e00f8fff33d5d071777950e667',1,'hist::InitState']]],
+  ['_7estate_210',['~State',['../classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7',1,'hist::State']]]
 ];

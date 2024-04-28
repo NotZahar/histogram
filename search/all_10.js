@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utility_78',['utility',['../structhist_1_1types_1_1utility.html',1,'hist::types']]]
+  ['ui_106',['ui',['../structhist_1_1types_1_1ui.html',1,'hist::types']]]
 ];

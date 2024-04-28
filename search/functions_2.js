@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['changepage_135',['changePage',['../classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368',1,'hist::NavigationService']]],
-  ['clear_136',['clear',['../classhist_1_1StateManager.html#aa06700293ff542088833227bd1342415',1,'hist::StateManager']]]
+  ['done_175',['done',['../classhist_1_1InitController.html#aa09e1b8947b1710ee3731b3369b8d0f1',1,'hist::InitController']]]
 ];

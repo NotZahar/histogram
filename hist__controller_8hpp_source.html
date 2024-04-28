@@ -73,27 +73,34 @@ $(function() {
 <div class="contents">
 <a href="hist__controller_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehist.html">hist</a> {</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classhist_1_1HistController.html">    6</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhist_1_1HistController.html">HistController</a> final : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../models/hist_model.hpp&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classhist_1_1HistController.html#a97ec229c755d09605fe0f5d08e11bcdb">HistController</a>(QObject* parent = <span class="keyword">nullptr</span>) noexcept;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">   12</a></span>&#160;        <a class="code" href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">~HistController</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhist_1_1HistController.html#ac331084b6fbea21d793c12f9fbdf9c51">init</a>() noexcept;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehist.html">hist</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classhist_1_1HistController.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhist_1_1HistController.html">HistController</a> final : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classhist_1_1HistController.html#a97ec229c755d09605fe0f5d08e11bcdb">HistController</a>(QObject* parent = <span class="keyword">nullptr</span>) noexcept;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//    signals:</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//        void done();</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="ttc" id="aclasshist_1_1HistController_html"><div class="ttname"><a href="classhist_1_1HistController.html">hist::HistController</a></div><div class="ttdef"><b>Definition:</b> hist_controller.hpp:6</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">   16</a></span>&#160;        <a class="code" href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">~HistController</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhist_1_1HistController.html#ac331084b6fbea21d793c12f9fbdf9c51">init</a>() noexcept;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    private:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> saveSelectedFilePath(QUrl path) noexcept;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> read() noexcept;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::unique_ptr&lt;model::HistModel&gt; _model;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="ttc" id="aclasshist_1_1HistController_html"><div class="ttname"><a href="classhist_1_1HistController.html">hist::HistController</a></div><div class="ttdef"><b>Definition:</b> hist_controller.hpp:10</div></div>
 <div class="ttc" id="aclasshist_1_1HistController_html_a04aacd4580c9ec257fbc311591e4c101"><div class="ttname"><a href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">hist::HistController::~HistController</a></div><div class="ttdeci">~HistController()=default</div></div>
-<div class="ttc" id="aclasshist_1_1HistController_html_a97ec229c755d09605fe0f5d08e11bcdb"><div class="ttname"><a href="classhist_1_1HistController.html#a97ec229c755d09605fe0f5d08e11bcdb">hist::HistController::HistController</a></div><div class="ttdeci">HistController(QObject *parent=nullptr) noexcept</div><div class="ttdef"><b>Definition:</b> hist_controller.cpp:6</div></div>
-<div class="ttc" id="aclasshist_1_1HistController_html_ac331084b6fbea21d793c12f9fbdf9c51"><div class="ttname"><a href="classhist_1_1HistController.html#ac331084b6fbea21d793c12f9fbdf9c51">hist::HistController::init</a></div><div class="ttdeci">void init() noexcept</div><div class="ttdef"><b>Definition:</b> hist_controller.cpp:10</div></div>
+<div class="ttc" id="aclasshist_1_1HistController_html_a97ec229c755d09605fe0f5d08e11bcdb"><div class="ttname"><a href="classhist_1_1HistController.html#a97ec229c755d09605fe0f5d08e11bcdb">hist::HistController::HistController</a></div><div class="ttdeci">HistController(QObject *parent=nullptr) noexcept</div><div class="ttdef"><b>Definition:</b> hist_controller.cpp:7</div></div>
+<div class="ttc" id="aclasshist_1_1HistController_html_ac331084b6fbea21d793c12f9fbdf9c51"><div class="ttname"><a href="classhist_1_1HistController.html#ac331084b6fbea21d793c12f9fbdf9c51">hist::HistController::init</a></div><div class="ttdeci">void init() noexcept</div><div class="ttdef"><b>Definition:</b> hist_controller.cpp:18</div></div>
 <div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> hist_state.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

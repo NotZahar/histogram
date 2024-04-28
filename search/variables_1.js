@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hasinstance_169',['HasInstance',['../namespacehist.html#ab6dcfc302a9718c763b6df4fde84309c',1,'hist']]]
+  ['background_5fc_212',['background_c',['../classhist_1_1Styles.html#a25bdc2d75be3ba3a6042bb9615888253',1,'hist::Styles']]],
+  ['black_5fc_213',['black_c',['../classhist_1_1Styles.html#a9dca6a76c4117d96cdc8b6b850cef24c',1,'hist::Styles']]]
 ];

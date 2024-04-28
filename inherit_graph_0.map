@@ -1,11 +1,13 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" title=" " alt="" coords="5,132,80,159"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,80,209"/>
 <area shape="rect" id="node2" href="$classhist_1_1HistController.html" title=" " alt="" coords="143,5,287,32"/>
-<area shape="rect" id="node3" href="$classhist_1_1InitController.html" title=" " alt="" coords="145,56,284,83"/>
-<area shape="rect" id="node4" href="$classhist_1_1NavigationService.html" title=" " alt="" coords="128,107,301,133"/>
-<area shape="rect" id="node5" href="$classhist_1_1State.html" title=" " alt="" coords="171,157,259,184"/>
-<area shape="rect" id="node8" href="$classhist_1_1StateManager.html" title=" " alt="" coords="142,208,287,235"/>
-<area shape="rect" id="node9" href="$classhist_1_1Styles.html" title=" " alt="" coords="167,259,262,285"/>
-<area shape="rect" id="node6" href="$classhist_1_1HistState.html" title=" " alt="" coords="349,132,464,159"/>
-<area shape="rect" id="node7" href="$classhist_1_1InitState.html" title=" " alt="" coords="352,183,461,209"/>
+<area shape="rect" id="node3" href="$classhist_1_1HistPageController.html" title=" " alt="" coords="128,56,303,83"/>
+<area shape="rect" id="node4" href="$classhist_1_1InitController.html" title=" " alt="" coords="146,107,285,133"/>
+<area shape="rect" id="node5" href="$classhist_1_1Messages.html" title=" " alt="" coords="156,157,275,184"/>
+<area shape="rect" id="node6" href="$classhist_1_1NavigationService.html" title=" " alt="" coords="129,208,302,235"/>
+<area shape="rect" id="node7" href="$classhist_1_1State.html" title=" " alt="" coords="171,259,259,285"/>
+<area shape="rect" id="node10" href="$classhist_1_1StateManager.html" title=" " alt="" coords="143,309,288,336"/>
+<area shape="rect" id="node11" href="$classhist_1_1Styles.html" title=" " alt="" coords="168,360,263,387"/>
+<area shape="rect" id="node8" href="$classhist_1_1HistState.html" title=" " alt="" coords="351,233,465,260"/>
+<area shape="rect" id="node9" href="$classhist_1_1InitState.html" title=" " alt="" coords="353,284,463,311"/>
 </map>

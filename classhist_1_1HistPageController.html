@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>histogram: Класс hist::HistPageController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">histogram
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+   <div id="projectbrief">Приложение для вывода частоты встречи слов в файле</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacehist.html">hist</a></li><li class="navelem"><a class="el" href="classhist_1_1HistPageController.html">HistPageController</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="classhist_1_1HistPageController-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс hist::HistPageController<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="hist__page__controller_8hpp_source.html">hist_page_controller.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:hist::HistPageController:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhist_1_1HistPageController__inherit__graph.png" border="0" usemap="#ahist_1_1HistPageController_inherit__map" alt="Inheritance graph"/></div>
+<map name="ahist_1_1HistPageController_inherit__map" id="ahist_1_1HistPageController_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,180,107"/>
+<area shape="rect" title=" " alt="" coords="55,5,130,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса hist::HistPageController:</div>
+<div class="dyncontent">
+<div class="center"><img src="classhist_1_1HistPageController__coll__graph.png" border="0" usemap="#ahist_1_1HistPageController_coll__map" alt="Collaboration graph"/></div>
+<map name="ahist_1_1HistPageController_coll__map" id="ahist_1_1HistPageController_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,180,107"/>
+<area shape="rect" title=" " alt="" coords="55,5,130,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:a664e0faeeed37281c245421b4ad0bd50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a664e0faeeed37281c245421b4ad0bd50">onFileSelected</a> (QUrl path) noexcept</td></tr>
+<tr class="separator:a664e0faeeed37281c245421b4ad0bd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455f2fa1bcf284afdd1d9d18a4f1c018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a455f2fa1bcf284afdd1d9d18a4f1c018">onStarted</a> () noexcept</td></tr>
+<tr class="separator:a455f2fa1bcf284afdd1d9d18a4f1c018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153c4b9e3836b300fb2f55e93fb2e5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a153c4b9e3836b300fb2f55e93fb2e5fb">onCanceled</a> () noexcept</td></tr>
+<tr class="separator:a153c4b9e3836b300fb2f55e93fb2e5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:a2978c4f2c1ab4511e608f5cd2ea2d7f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a2978c4f2c1ab4511e608f5cd2ea2d7f8">fileSelected</a> (QUrl path)</td></tr>
+<tr class="separator:a2978c4f2c1ab4511e608f5cd2ea2d7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac908d217601d7e2471ab414ef0d44ca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#ac908d217601d7e2471ab414ef0d44ca2">startRead</a> ()</td></tr>
+<tr class="separator:ac908d217601d7e2471ab414ef0d44ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae515256788e9e57b68952ffa60acd41c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#ae515256788e9e57b68952ffa60acd41c">openEnabledChanged</a> ()</td></tr>
+<tr class="separator:ae515256788e9e57b68952ffa60acd41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e31b22338e99f7d3072cdf856e48689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a3e31b22338e99f7d3072cdf856e48689">startEnabledChanged</a> ()</td></tr>
+<tr class="separator:a3e31b22338e99f7d3072cdf856e48689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cac0f09467b4f9be0df3bcce6ef26a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a9cac0f09467b4f9be0df3bcce6ef26a7">cancelEnabledChanged</a> ()</td></tr>
+<tr class="separator:a9cac0f09467b4f9be0df3bcce6ef26a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8d810997bfe03c3265804527153ecff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a8d810997bfe03c3265804527153ecff0">openEnabled</a> () const noexcept</td></tr>
+<tr class="separator:a8d810997bfe03c3265804527153ecff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e47d651dd9de97f166da9df76e34495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a5e47d651dd9de97f166da9df76e34495">setOpenEnabled</a> (bool enabled) noexcept</td></tr>
+<tr class="separator:a5e47d651dd9de97f166da9df76e34495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edde5119ca47e66433ba2d4d5862367"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a0edde5119ca47e66433ba2d4d5862367">startEnabled</a> () const noexcept</td></tr>
+<tr class="separator:a0edde5119ca47e66433ba2d4d5862367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26584a992e46e43efb54c24d51e9684e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a26584a992e46e43efb54c24d51e9684e">setStartEnabled</a> (bool enabled) noexcept</td></tr>
+<tr class="separator:a26584a992e46e43efb54c24d51e9684e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f352106d66ac366814a22ef357e7a4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a4f352106d66ac366814a22ef357e7a4f">cancelEnabled</a> () const noexcept</td></tr>
+<tr class="separator:a4f352106d66ac366814a22ef357e7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0c08965bdfbcfcc17e782b7ccd0930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a3f0c08965bdfbcfcc17e782b7ccd0930">setCancelEnabled</a> (bool enabled) noexcept</td></tr>
+<tr class="separator:a3f0c08965bdfbcfcc17e782b7ccd0930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af87e3c98fb06f7818bbf9b177cea353a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classhist_1_1HistPageController.html">HistPageController</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#af87e3c98fb06f7818bbf9b177cea353a">instance</a> () noexcept</td></tr>
+<tr class="separator:af87e3c98fb06f7818bbf9b177cea353a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:a4568b2049559c627e24223bdf7663a5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a4568b2049559c627e24223bdf7663a5f">openEnabled</a></td></tr>
+<tr class="separator:a4568b2049559c627e24223bdf7663a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c5627d289f825016df0e45f31c69e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a36c5627d289f825016df0e45f31c69e6">startEnabled</a></td></tr>
+<tr class="separator:a36c5627d289f825016df0e45f31c69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9ffb666a85ffdd63e51a05b125449d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a6d9ffb666a85ffdd63e51a05b125449d">cancelEnabled</a></td></tr>
+<tr class="separator:a6d9ffb666a85ffdd63e51a05b125449d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Методы</h2>
+<a id="a4f352106d66ac366814a22ef357e7a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f352106d66ac366814a22ef357e7a4f">&#9670;&nbsp;</a></span>cancelEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::cancelEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cac0f09467b4f9be0df3bcce6ef26a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cac0f09467b4f9be0df3bcce6ef26a7">&#9670;&nbsp;</a></span>cancelEnabledChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::cancelEnabledChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2978c4f2c1ab4511e608f5cd2ea2d7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2978c4f2c1ab4511e608f5cd2ea2d7f8">&#9670;&nbsp;</a></span>fileSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::fileSelected </td>
+          <td>(</td>
+          <td class="paramtype">QUrl&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af87e3c98fb06f7818bbf9b177cea353a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87e3c98fb06f7818bbf9b177cea353a">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classhist_1_1HistPageController.html">HistPageController</a> &amp; hist::HistPageController::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a153c4b9e3836b300fb2f55e93fb2e5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153c4b9e3836b300fb2f55e93fb2e5fb">&#9670;&nbsp;</a></span>onCanceled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onCanceled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a664e0faeeed37281c245421b4ad0bd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664e0faeeed37281c245421b4ad0bd50">&#9670;&nbsp;</a></span>onFileSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onFileSelected </td>
+          <td>(</td>
+          <td class="paramtype">QUrl&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a455f2fa1bcf284afdd1d9d18a4f1c018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a455f2fa1bcf284afdd1d9d18a4f1c018">&#9670;&nbsp;</a></span>onStarted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onStarted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d810997bfe03c3265804527153ecff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d810997bfe03c3265804527153ecff0">&#9670;&nbsp;</a></span>openEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::openEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae515256788e9e57b68952ffa60acd41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae515256788e9e57b68952ffa60acd41c">&#9670;&nbsp;</a></span>openEnabledChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::openEnabledChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f0c08965bdfbcfcc17e782b7ccd0930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0c08965bdfbcfcc17e782b7ccd0930">&#9670;&nbsp;</a></span>setCancelEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::setCancelEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e47d651dd9de97f166da9df76e34495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e47d651dd9de97f166da9df76e34495">&#9670;&nbsp;</a></span>setOpenEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::setOpenEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26584a992e46e43efb54c24d51e9684e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26584a992e46e43efb54c24d51e9684e">&#9670;&nbsp;</a></span>setStartEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::setStartEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0edde5119ca47e66433ba2d4d5862367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edde5119ca47e66433ba2d4d5862367">&#9670;&nbsp;</a></span>startEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::startEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e31b22338e99f7d3072cdf856e48689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e31b22338e99f7d3072cdf856e48689">&#9670;&nbsp;</a></span>startEnabledChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::startEnabledChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac908d217601d7e2471ab414ef0d44ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac908d217601d7e2471ab414ef0d44ca2">&#9670;&nbsp;</a></span>startRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::startRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Полный список свойств</h2>
+<a id="a6d9ffb666a85ffdd63e51a05b125449d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9ffb666a85ffdd63e51a05b125449d">&#9670;&nbsp;</a></span>cancelEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::cancelEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4568b2049559c627e24223bdf7663a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4568b2049559c627e24223bdf7663a5f">&#9670;&nbsp;</a></span>openEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::openEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36c5627d289f825016df0e45f31c69e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c5627d289f825016df0e45f31c69e6">&#9670;&nbsp;</a></span>startEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hist::HistPageController::startEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/controllers/<a class="el" href="hist__page__controller_8hpp_source.html">hist_page_controller.hpp</a></li>
+<li>src/controllers/<a class="el" href="hist__page__controller_8cpp.html">hist_page_controller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

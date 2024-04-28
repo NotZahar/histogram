@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getcurrentstate_144',['getCurrentState',['../classhist_1_1StateManager.html#a519628f3a0c455f42ac0c732c903cb7e',1,'hist::StateManager']]],
-  ['getstateid_145',['getStateId',['../classhist_1_1State.html#a6dcaf51a2b16ff772e985cfe6323a567',1,'hist::State']]],
-  ['gray_5fc_146',['gray_c',['../classhist_1_1Styles.html#accd14feea91693bcdce7a2c993c62f04',1,'hist::Styles']]]
+  ['histcontroller_181',['HistController',['../classhist_1_1HistController.html#a97ec229c755d09605fe0f5d08e11bcdb',1,'hist::HistController']]],
+  ['histmodel_182',['HistModel',['../classhist_1_1model_1_1HistModel.html#a7124712b36bba65011983b60d52a8cfe',1,'hist::model::HistModel']]],
+  ['histstate_183',['HistState',['../classhist_1_1HistState.html#a4755184e5bb3171e210025d62afa0c0f',1,'hist::HistState']]]
 ];

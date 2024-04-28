@@ -82,25 +82,25 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        Q_OBJECT</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc">   12</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc">start</a>() noexcept = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef">   13</a></span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef">finish</a>() noexcept = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">state</a> <a class="code" href="classhist_1_1State.html#a6dcaf51a2b16ff772e985cfe6323a567">getStateId</a>() const noexcept;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7">   16</a></span>&#160;        virtual ~<a class="code" href="classhist_1_1State.html">State</a>() = default;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7">   12</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7">~State</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc">   14</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc">start</a>() noexcept = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef">   15</a></span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef">finish</a>() noexcept = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">state</a> <a class="code" href="classhist_1_1State.html#a6dcaf51a2b16ff772e985cfe6323a567">getStateId</a>() const noexcept;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    protected:</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classhist_1_1State.html#a45b20f8c53cfced58ba309e02f4801c6">   19</a></span>&#160;        <a class="code" href="classhist_1_1State.html">State</a>() = delete;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        explicit <a class="code" href="classhist_1_1State.html">State</a>(const <a class="code" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">state</a> stateId, QObject* parent = <span class="keywordtype">nullptr</span>) noexcept;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    private:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        const <a class="code" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">state</a> _stateId;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    private:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        const <a class="code" href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">state</a> _stateId;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="ttc" id="aclasshist_1_1State_html"><div class="ttname"><a href="classhist_1_1State.html">hist::State</a></div><div class="ttdef"><b>Definition:</b> state.hpp:8</div></div>
 <div class="ttc" id="aclasshist_1_1State_html_a6dcaf51a2b16ff772e985cfe6323a567"><div class="ttname"><a href="classhist_1_1State.html#a6dcaf51a2b16ff772e985cfe6323a567">hist::State::getStateId</a></div><div class="ttdeci">state getStateId() const noexcept</div><div class="ttdef"><b>Definition:</b> state.cpp:13</div></div>
 <div class="ttc" id="aclasshist_1_1State_html_a94a7c6aa20fdc5f5b2c5468bd1c855cc"><div class="ttname"><a href="classhist_1_1State.html#a94a7c6aa20fdc5f5b2c5468bd1c855cc">hist::State::start</a></div><div class="ttdeci">virtual void start() noexcept=0</div></div>
 <div class="ttc" id="aclasshist_1_1State_html_a9ad15e51590254472774fa441b03cdef"><div class="ttname"><a href="classhist_1_1State.html#a9ad15e51590254472774fa441b03cdef">hist::State::finish</a></div><div class="ttdeci">virtual void finish() noexcept=0</div></div>
+<div class="ttc" id="aclasshist_1_1State_html_af4b013f22f749cfcf9b841f713a851e7"><div class="ttname"><a href="classhist_1_1State.html#af4b013f22f749cfcf9b841f713a851e7">hist::State::~State</a></div><div class="ttdeci">virtual ~State()=default</div></div>
 <div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> hist_state.cpp:6</div></div>
 <div class="ttc" id="anamespacehist_html_a0fc42dfd2f5b90aa63c8c886dca55e6f"><div class="ttname"><a href="namespacehist.html#a0fc42dfd2f5b90aa63c8c886dca55e6f">hist::state</a></div><div class="ttdeci">state</div><div class="ttdef"><b>Definition:</b> states.hpp:4</div></div>
 <div class="ttc" id="astates_8hpp_html"><div class="ttname"><a href="states_8hpp.html">states.hpp</a></div></div>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['navigation_90',['navigation',['../structhist_1_1types_1_1navigation.html',1,'hist::types']]],
-  ['navigationservice_91',['NavigationService',['../classhist_1_1NavigationService.html',1,'hist']]]
+  ['initcontroller_120',['InitController',['../classhist_1_1InitController.html',1,'hist']]],
+  ['initstate_121',['InitState',['../classhist_1_1InitState.html',1,'hist']]]
 ];

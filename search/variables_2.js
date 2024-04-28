@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['organizationname_170',['organizationName',['../structhist_1_1settings.html#a5c0a4a305467c2ec16f00bf1cffcc0b2',1,'hist::settings']]]
+  ['cancel_5fbtn_214',['cancel_btn',['../classhist_1_1Messages.html#a34e8f350466557b4e8bb4c89d5ce3bcf',1,'hist::Messages']]]
 ];
