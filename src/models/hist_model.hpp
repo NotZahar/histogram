@@ -4,6 +4,11 @@
 
 namespace hist::model {
     class HistModel final {
+        struct SelectedFile {
+            QUrl path;
+            qint64 size;
+        };
+
     public:
         HistModel() = default;
 
@@ -12,7 +17,10 @@ namespace hist::model {
         QUrl getSelectedFilePath() const noexcept;
         void setSelectedFilePath(QUrl path) noexcept;
 
+        qint64 getSelectedFileSize() const noexcept;
+        void setSelectedFileSize(qint64 size) noexcept;
+
     private:
-        QUrl _selectedFilePath;
+        SelectedFile _file;
     };
 }

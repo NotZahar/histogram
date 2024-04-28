@@ -18,6 +18,7 @@ find_package(
             Gui
             Qml
             Quick
+            Concurrent
 )
 
 find_package(
@@ -54,7 +55,6 @@ qt_add_executable(
         # cpp utility
         src/utility/styles.cpp
         src/utility/messages.cpp
-        src/utility/thread_pool.cpp
 
         # qml
         src/qml/qml.qrc
@@ -76,14 +76,16 @@ target_link_libraries(
             Qt6::Gui
             Qt6::Qml
             Qt6::Quick
+            Qt6::Concurrent
             ${Boost_LIBRARIES}
 )
-
-file(COPY resources/test DESTINATION ${CMAKE_BINARY_DIR})
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Werror -pedantic)
 endif()
+
+# need test file
+file(COPY resources/test/test.txt DESTINATION ${CMAKE_BINARY_DIR})
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
 

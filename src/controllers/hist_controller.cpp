@@ -2,10 +2,10 @@
 
 #include <QDebug> // TODO: delete
 #include <QFile>
+#include <QtConcurrent>
 
 #include "../services/navigation_service.hpp"
 #include "hist_page_controller.hpp"
-#include "../utility/thread_pool.hpp"
 
 namespace hist {
     HistController::HistController(QObject* parent) noexcept
@@ -15,14 +15,17 @@ namespace hist {
     {
         auto* histPageController = &HistPageController::instance();
         connect(histPageController, &HistPageController::fileSelected,
-                this, &HistController::saveSelectedFilePath);
+                this, &HistController::setSelectedFilePath);
         connect(histPageController, &HistPageController::startRead,
                 this, &HistController::read);
         connect(this, &HistController::fileSizeChanged,
-                histPageController, &HistPageController::onFileSizeChanged,
+                this, &HistController::setSelectedFileSize,
                 Qt::QueuedConnection);
         connect(this, &HistController::handleWord,
                 histPageController, &HistPageController::onHandleWord,
+                Qt::QueuedConnection);
+        connect(this, &HistController::isReadingChanged,
+                histPageController, &HistPageController::setIsReading,
                 Qt::QueuedConnection);
     }
 
@@ -30,15 +33,19 @@ namespace hist {
         emit NavigationService::instance().changePage("qrc:/qml/pages/Hist.qml");
     }
 
-    void HistController::saveSelectedFilePath(QUrl path) noexcept {
+    void HistController::setSelectedFileSize(qint64 size) noexcept {
+        _model->setSelectedFileSize(size);
+    }
+
+    void HistController::setSelectedFilePath(QUrl path) noexcept {
         _model->setSelectedFilePath(std::move(path));
     }
 
     void HistController::read() noexcept {
         const QUrl selectedFilePath = _model->getSelectedFilePath();
 
-        tools::ThreadPool pool{ 1 };
-        pool.addTask([this, filePath = selectedFilePath.toLocalFile()]() {
+        emit isReadingChanged(true);
+        QFuture<void> readFuture = QtConcurrent::run([this, filePath = selectedFilePath.toLocalFile()]() {
             QFile file(filePath);
             if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
                 return;
@@ -51,8 +58,9 @@ namespace hist {
                 for (const auto& word : words)
                    emit handleWord(word);
             }
+        }).then([this]() {
+            emit isReadingChanged(false);
         });
-        pool.wait();
     }
 }
 

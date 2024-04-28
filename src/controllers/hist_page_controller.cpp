@@ -6,21 +6,15 @@ namespace hist {
     HistPageController::HistPageController(QObject* parent) noexcept
         : QObject{ parent },
           _openEnabled{ true },
-          _startEnabled{ true },
+          _startEnabled{ false },
           _cancelEnabled{ true },
-          _processProgressValue{ 0 }
+          _processProgressValue{ 0 },
+          _isReading{ false }
     {}
 
     HistPageController& HistPageController::instance() noexcept {
         static HistPageController instance;
         return instance;
-    }
-
-    void HistPageController::setProcessProgressValue(int value) noexcept {
-        if (_processProgressValue == value)
-            return;
-        _processProgressValue = value;
-        emit processProgressValueChanged();
     }
 
     bool HistPageController::openEnabled() const noexcept {
@@ -60,26 +54,36 @@ namespace hist {
         return _processProgressValue;
     }
 
+    void HistPageController::setProcessProgressValue(int value) noexcept {
+        if (_processProgressValue == value)
+            return;
+        _processProgressValue = value;
+        emit processProgressValueChanged();
+    }
+
+    void HistPageController::setIsReading(bool isReading) noexcept {
+        _isReading = isReading;
+    }
+
     void HistPageController::onFileSelected(QUrl path) noexcept {
+        setStartEnabled(true);
         emit fileSelected(path);
     }
 
     void HistPageController::onStarted() noexcept {
-        setOpenEnabled(false);
+        if (_isReading)
+            return;
+
         setStartEnabled(false);
         emit startRead();
     }
 
     void HistPageController::onCanceled() noexcept {
-        // TODO: Implement!
-    }
-
-    void HistPageController::onFileSizeChanged(qint64 /*size*/) noexcept {
-        // TODO: [here]
-//        setProcessProgressValue();
+        // TODO: Implement logic!
     }
 
     void HistPageController::onHandleWord(QString word) noexcept {
-        qDebug() << word;
+        (void)word;
+//        qDebug() << word;
     }
 }

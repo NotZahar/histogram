@@ -93,6 +93,7 @@ Item {
                     enabled: HistPageController.cancelEnabled
                     anchors.right: parent.right
                     text: Messages.cancel_btn
+                    backgroundColor: Styles.pink_c
 
                     onClicked: HistPageController.onCanceled()
                 }

@@ -18,6 +18,7 @@ namespace hist {
         Q_PROPERTY(QString gray_c MEMBER gray_c CONSTANT)
         Q_PROPERTY(QString darkGray_c MEMBER darkGray_c CONSTANT)
         Q_PROPERTY(QString black_c MEMBER black_c CONSTANT)
+        Q_PROPERTY(QString pink_c MEMBER pink_c CONSTANT)
         Q_PROPERTY(QString defaultButton_c MEMBER defaultButton_c CONSTANT)
 
     public:
@@ -36,6 +37,7 @@ namespace hist {
         const QString gray_c;
         const QString darkGray_c;
         const QString black_c;
+        const QString pink_c;
         const QString defaultButton_c;
 
     private:

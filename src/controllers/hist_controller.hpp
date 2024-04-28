@@ -21,9 +21,11 @@ namespace hist {
     signals:
         void fileSizeChanged(qint64 size);
         void handleWord(QString word);
+        void isReadingChanged(bool isReading);
 
     private:
-        void saveSelectedFilePath(QUrl path) noexcept;
+        void setSelectedFilePath(QUrl path) noexcept;
+        void setSelectedFileSize(qint64 size) noexcept;
         void read() noexcept;
 
         std::unique_ptr<model::HistModel> _model;

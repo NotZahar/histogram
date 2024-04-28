@@ -23,6 +23,7 @@ namespace hist {
         void setCancelEnabled(bool enabled) noexcept;
 
         int processProgressValue() const noexcept;
+        void setProcessProgressValue(int value) noexcept;
 
     signals:
         void fileSelected(QUrl path);
@@ -38,20 +39,20 @@ namespace hist {
         void onFileSelected(QUrl path) noexcept;
         void onStarted() noexcept;
         void onCanceled() noexcept;
-        void onFileSizeChanged(qint64 size) noexcept;
         void onHandleWord(QString word) noexcept;
+
+        void setIsReading(bool isReading) noexcept;
 
     private:
         explicit HistPageController(QObject* parent = nullptr) noexcept;
 
         ~HistPageController() = default;
 
-        void setProcessProgressValue(int value) noexcept;
-
         bool _openEnabled;
         bool _startEnabled;
         bool _cancelEnabled;
 
         int _processProgressValue;
+        bool _isReading;
     };
 }
