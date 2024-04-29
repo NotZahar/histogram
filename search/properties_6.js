@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['secondary_5fc_273',['secondary_c',['../classhist_1_1Styles.html#a2e1ca2037f6f30ebc72f33f25b60ee77',1,'hist::Styles']]],
-  ['standardmargin_274',['standardMargin',['../classhist_1_1Styles.html#a3d485f03b52123a9fb86f0bb40091ca8',1,'hist::Styles']]],
-  ['standardradius_275',['standardRadius',['../classhist_1_1Styles.html#a79f62efd810899173246b07d951e14d2',1,'hist::Styles']]],
-  ['start_5fbtn_276',['start_btn',['../classhist_1_1Messages.html#af73e7b869c74b0e96c4da6f95557eda3',1,'hist::Messages']]],
-  ['startenabled_277',['startEnabled',['../classhist_1_1HistPageController.html#a36c5627d289f825016df0e45f31c69e6',1,'hist::HistPageController']]]
+  ['pink_5fc_274',['pink_c',['../classhist_1_1Styles.html#ac75f0d197f0868b37477ada61923cfe9',1,'hist::Styles']]],
+  ['primary_5fc_275',['primary_c',['../classhist_1_1Styles.html#a9b7572fee5f7e89cf461d4ddc03f899f',1,'hist::Styles']]],
+  ['processprogressvalue_276',['processProgressValue',['../classhist_1_1HistPageController.html#a544ac388958ea68c19e0657a91bea09b',1,'hist::HistPageController']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pink_5fc_246',['pink_c',['../classhist_1_1Styles.html#a074de0a823284ee66fafe6c508848d8a',1,'hist::Styles']]],
-  ['primary_5fc_247',['primary_c',['../classhist_1_1Styles.html#a014379afde40052b0749d1ce379dc8d3',1,'hist::Styles']]]
+  ['open_5fbtn_246',['open_btn',['../classhist_1_1Messages.html#aba6c9980b2ed1dd788d1cb442c7d1e5c',1,'hist::Messages']]],
+  ['organizationname_247',['organizationName',['../structhist_1_1settings.html#a5c0a4a305467c2ec16f00bf1cffcc0b2',1,'hist::settings']]]
 ];

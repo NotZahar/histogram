@@ -100,11 +100,12 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> setSelectedFilePath(QUrl path) noexcept;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> setSelectedFileSize(qint64 size) noexcept;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> read() noexcept;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::unique_ptr&lt;model::HistModel&gt; _model;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        const QRegularExpression _nonWordRegExp;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> toStatistics(QString word) noexcept;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::unique_ptr&lt;model::HistModel&gt; _model;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        const QRegularExpression _nonWordRegExp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="ttc" id="aclasshist_1_1HistController_html"><div class="ttname"><a href="classhist_1_1HistController.html">hist::HistController</a></div><div class="ttdef"><b>Definition:</b> hist_controller.hpp:11</div></div>
 <div class="ttc" id="aclasshist_1_1HistController_html_a04aacd4580c9ec257fbc311591e4c101"><div class="ttname"><a href="classhist_1_1HistController.html#a04aacd4580c9ec257fbc311591e4c101">hist::HistController::~HistController</a></div><div class="ttdeci">~HistController()=default</div></div>
 <div class="ttc" id="aclasshist_1_1HistController_html_a6220315117447c7089c6ea3cb1719ad9"><div class="ttname"><a href="classhist_1_1HistController.html#a6220315117447c7089c6ea3cb1719ad9">hist::HistController::fileSizeChanged</a></div><div class="ttdeci">void fileSizeChanged(qint64 size)</div></div>
