@@ -39,7 +39,6 @@ namespace hist {
         void onFileSelected(QUrl path) noexcept;
         void onStarted() noexcept;
         void onCanceled() noexcept;
-        void onHandleWord(QString word) noexcept;
 
         void setIsReading(bool isReading) noexcept;
 

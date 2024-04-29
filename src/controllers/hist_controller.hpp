@@ -27,6 +27,7 @@ namespace hist {
         void setSelectedFilePath(QUrl path) noexcept;
         void setSelectedFileSize(qint64 size) noexcept;
         void read() noexcept;
+        void toStatistics(QString word) noexcept;
 
         std::unique_ptr<model::HistModel> _model;
         const QRegularExpression _nonWordRegExp;

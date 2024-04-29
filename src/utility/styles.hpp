@@ -10,6 +10,7 @@ namespace hist {
         Q_PROPERTY(qreal defaultButtonWidth MEMBER defaultButtonWidth CONSTANT)
         Q_PROPERTY(qreal defaultButtonHeight MEMBER defaultButtonHeight CONSTANT)
         Q_PROPERTY(int defaultButtonFontSize MEMBER defaultButtonFontSize CONSTANT)
+        Q_PROPERTY(int mediumFontSize MEMBER mediumFontSize CONSTANT)
         Q_PROPERTY(qreal defaultSpacing MEMBER defaultSpacing CONSTANT)
         Q_PROPERTY(QString background_c MEMBER background_c CONSTANT)
         Q_PROPERTY(QString primary_c MEMBER primary_c CONSTANT)
@@ -19,6 +20,7 @@ namespace hist {
         Q_PROPERTY(QString darkGray_c MEMBER darkGray_c CONSTANT)
         Q_PROPERTY(QString black_c MEMBER black_c CONSTANT)
         Q_PROPERTY(QString pink_c MEMBER pink_c CONSTANT)
+        Q_PROPERTY(QString green_c MEMBER green_c CONSTANT)
         Q_PROPERTY(QString defaultButton_c MEMBER defaultButton_c CONSTANT)
 
     public:
@@ -29,6 +31,7 @@ namespace hist {
         const qreal defaultButtonWidth;
         const qreal defaultButtonHeight;
         const int defaultButtonFontSize;
+        const int mediumFontSize;
         const qreal defaultSpacing;
         const QString background_c;
         const QString primary_c;
@@ -38,6 +41,7 @@ namespace hist {
         const QString darkGray_c;
         const QString black_c;
         const QString pink_c;
+        const QString green_c;
         const QString defaultButton_c;
 
     private:

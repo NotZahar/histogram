@@ -8,6 +8,7 @@ namespace hist {
           defaultButtonWidth{ 180 },
           defaultButtonHeight{ 55 },
           defaultButtonFontSize{ 25 },
+          mediumFontSize{ 20 },
           defaultSpacing{ 8 },
           background_c{ "#1e1e1e" },
           primary_c{ "#171717" },
@@ -17,6 +18,7 @@ namespace hist {
           darkGray_c{ "#101010" },
           black_c{ "#0a0a0a" },
           pink_c{ "#844040" },
+          green_c{ "#00a93f" },
           defaultButton_c{ "#070021" }
     {}
 

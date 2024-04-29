@@ -81,9 +81,4 @@ namespace hist {
     void HistPageController::onCanceled() noexcept {
         // TODO: Implement logic!
     }
-
-    void HistPageController::onHandleWord(QString word) noexcept {
-        (void)word;
-//        qDebug() << word;
-    }
 }

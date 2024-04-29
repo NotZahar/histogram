@@ -22,7 +22,7 @@ namespace hist {
                 this, &HistController::setSelectedFileSize,
                 Qt::QueuedConnection);
         connect(this, &HistController::handleWord,
-                histPageController, &HistPageController::onHandleWord,
+                this, &HistController::toStatistics,
                 Qt::QueuedConnection);
         connect(this, &HistController::isReadingChanged,
                 histPageController, &HistPageController::setIsReading,
@@ -61,6 +61,10 @@ namespace hist {
         }).then([this]() {
             emit isReadingChanged(false);
         });
+    }
+
+    void HistController::toStatistics(QString word) noexcept {
+        (void)word;
     }
 }
 
