@@ -11,7 +11,9 @@ namespace hist {
         Q_PROPERTY(qreal defaultButtonHeight MEMBER defaultButtonHeight CONSTANT)
         Q_PROPERTY(int defaultButtonFontSize MEMBER defaultButtonFontSize CONSTANT)
         Q_PROPERTY(int mediumFontSize MEMBER mediumFontSize CONSTANT)
+        Q_PROPERTY(int smallFontSize MEMBER smallFontSize CONSTANT)
         Q_PROPERTY(qreal defaultSpacing MEMBER defaultSpacing CONSTANT)
+        Q_PROPERTY(qreal smallSpacing MEMBER smallSpacing CONSTANT)
         Q_PROPERTY(QString background_c MEMBER background_c CONSTANT)
         Q_PROPERTY(QString primary_c MEMBER primary_c CONSTANT)
         Q_PROPERTY(QString secondary_c MEMBER secondary_c CONSTANT)
@@ -32,7 +34,9 @@ namespace hist {
         const qreal defaultButtonHeight;
         const int defaultButtonFontSize;
         const int mediumFontSize;
+        const int smallFontSize;
         const qreal defaultSpacing;
+        const qreal smallSpacing;
         const QString background_c;
         const QString primary_c;
         const QString secondary_c;

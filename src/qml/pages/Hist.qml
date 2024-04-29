@@ -34,8 +34,6 @@ Item {
             HistComponents.Histogram {
                 id: histogram
 
-                topLabelText: "11111"
-                bottomLabelText: "0"
                 layer.enabled: true
                 layer.effect: OpacityMask {
                     maskSource: radiusMask

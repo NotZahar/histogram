@@ -14,3 +14,6 @@ cmake --build .
 
 ##### Docs:
 - https://notzahar.github.io/histogram/
+
+##### Demo:
+![demo](./demo/demo.png)
