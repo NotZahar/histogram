@@ -1,16 +1,17 @@
 var indexSectionsWithContent =
 {
   0: "abcdfghimnopqrstuw~П",
-  1: "chimnqrsu",
+  1: "chimnqrsuw",
   2: "h",
   3: "himnqrst",
-  4: "acdfghimops~",
+  4: "acdfghimopsw~",
   5: "abcdgimopsw",
-  6: "s",
-  7: "hi",
-  8: "bcdgmopsw",
-  9: "h",
-  10: "П"
+  6: "t",
+  7: "s",
+  8: "hi",
+  9: "bcdgmopsw",
+  10: "h",
+  11: "П"
 };
 
 var indexSectionNames =
@@ -21,11 +22,12 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "enums",
-  7: "enumvalues",
-  8: "properties",
-  9: "defines",
-  10: "pages"
+  6: "typedefs",
+  7: "enums",
+  8: "enumvalues",
+  9: "properties",
+  10: "defines",
+  11: "pages"
 };
 
 var indexSectionLabels =
@@ -36,10 +38,11 @@ var indexSectionLabels =
   3: "Файлы",
   4: "Функции",
   5: "Переменные",
-  6: "Перечисления",
-  7: "Элементы перечислений",
-  8: "Свойства",
-  9: "Макросы",
-  10: "Страницы"
+  6: "Определения типов",
+  7: "Перечисления",
+  8: "Элементы перечислений",
+  9: "Свойства",
+  10: "Макросы",
+  11: "Страницы"
 };
 
