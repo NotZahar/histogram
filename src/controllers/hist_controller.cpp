@@ -18,12 +18,6 @@ namespace hist {
                 this, &HistController::setSelectedFilePath);
         connect(histPageController, &HistPageController::startRead,
                 this, &HistController::read);
-        connect(this, &HistController::fileSizeChanged,
-                this, &HistController::setSelectedFileSize,
-                Qt::QueuedConnection);
-        connect(this, &HistController::handleWord,
-                this, &HistController::toStatistics,
-                Qt::QueuedConnection);
         connect(this, &HistController::isReadingChanged,
                 histPageController, &HistPageController::setIsReading,
                 Qt::QueuedConnection);
@@ -33,38 +27,44 @@ namespace hist {
         emit NavigationService::instance().changePage("qrc:/qml/pages/Hist.qml");
     }
 
-    void HistController::setSelectedFileSize(qint64 size) noexcept {
-        _model->setSelectedFileSize(size);
-    }
-
     void HistController::setSelectedFilePath(QUrl path) noexcept {
         _model->setSelectedFilePath(std::move(path));
     }
 
     void HistController::read() noexcept {
-        const QUrl selectedFilePath = _model->getSelectedFilePath();
-
         emit isReadingChanged(true);
-        QFuture<void> readFuture = QtConcurrent::run([this, filePath = selectedFilePath.toLocalFile()]() {
-            QFile file(filePath);
+        QFuture<void> readFuture = QtConcurrent::run([this]() {
+            QFile file(_model->getSelectedFilePath().toLocalFile());
             if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
                 return;
 
-            emit fileSizeChanged(file.size());
+            _model->setSelectedFileSize(file.size());
+            const int maxTopWords = _model->getMaxTopWords();
+            auto& statistics = _model->getStatistics();
 
             while (!file.atEnd()) {
                 const QString line = file.readLine();
                 const QStringList words = line.split(_nonWordRegExp, Qt::SkipEmptyParts);
                 for (const auto& word : words)
-                   emit handleWord(word);
+                    statistics.addWord(word);
+
+                const auto stats = statistics.getTopNWords(maxTopWords);
+                const auto diffs = getDiffs(stats); // TODO: [here]
+
+                // TODO: diffs = getDiffs(currentStats, stats)
+                //       if (!difs.empty())
+                //            emit diffs
+                for (const auto& s : stats) {
+                    qDebug() << s.first << s.second.word << s.second.quantity;
+                }
             }
         }).then([this]() {
             emit isReadingChanged(false);
         });
     }
 
-    void HistController::toStatistics(QString word) noexcept {
-        (void)word;
+    HistController::Diffs HistController::getDiffs(const structures::WordsStatistics::topWords_t &topWords) const noexcept {
+
     }
 }
 

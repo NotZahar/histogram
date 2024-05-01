@@ -1,6 +1,10 @@
 #include "hist_model.hpp"
 
 namespace hist::model {
+    HistModel::HistModel() noexcept
+        : _maxTopWords{ 15 }
+    {}
+
     QUrl HistModel::getSelectedFilePath() const noexcept {
         return _file.path;
     }
@@ -19,5 +23,17 @@ namespace hist::model {
         if (_file.size == size)
             return;
         _file.size = size;
+    }
+
+    int HistModel::getMaxTopWords() const noexcept {
+        return _maxTopWords;
+    }
+
+    structures::WordsStatistics &HistModel::getStatistics() noexcept {
+        return _statistics;
+    }
+
+    structures::WordsStatistics::topWords_t &HistModel::getCurrentTop() noexcept {
+        return _currentTop;
     }
 }

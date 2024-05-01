@@ -11,6 +11,8 @@ namespace hist {
     class HistController final : public QObject {
         Q_OBJECT
 
+        struct Diffs {};
+
     public:
         explicit HistController(QObject* parent = nullptr) noexcept;
 
@@ -19,15 +21,12 @@ namespace hist {
         void init() noexcept;
 
     signals:
-        void fileSizeChanged(qint64 size);
-        void handleWord(QString word);
         void isReadingChanged(bool isReading);
 
     private:
         void setSelectedFilePath(QUrl path) noexcept;
-        void setSelectedFileSize(qint64 size) noexcept;
         void read() noexcept;
-        void toStatistics(QString word) noexcept;
+        Diffs getDiffs(const structures::WordsStatistics::topWords_t& topWords) const noexcept;
 
         std::unique_ptr<model::HistModel> _model;
         const QRegularExpression _nonWordRegExp;
