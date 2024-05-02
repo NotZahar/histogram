@@ -94,7 +94,6 @@ namespace hist {
         auto currentIt = currentTop.cbegin();
         auto actualIt = topWords.cbegin();
         for (size_t i = 0; i < intersectingSize; ++i, ++currentIt, ++actualIt) {
-            const auto currentPosition = currentIt->first;
             const auto& currentWord = currentIt->second.word;
             const auto currentQuantity = currentIt->second.quantity;
 
@@ -102,7 +101,7 @@ namespace hist {
             const auto& actualWord = actualIt->second.word;
             const auto actualQuantity = actualIt->second.quantity;
 
-            assert(currentPosition == actualPosition);
+            assert(currentIt->first == actualPosition);
 
             if (currentWord != actualWord)
                 diffs.push_back(QSharedPointer<structures::DiffUpdateWord>::create(actualPosition, actualWord));
