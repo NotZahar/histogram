@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['processprogressvalue_231',['processProgressValue',['../classhist_1_1HistPageController.html#a62493b5343b402aca5d9af2e580e6d8e',1,'hist::HistPageController']]],
-  ['processprogressvaluechanged_232',['processProgressValueChanged',['../classhist_1_1HistPageController.html#afa283220e8923b9a8dc4744bf3789e2d',1,'hist::HistPageController']]]
+  ['readedbytes_275',['readedBytes',['../classhist_1_1model_1_1HistModel.html#ad2149bc0620a063253c6414831b96707',1,'hist::model::HistModel']]],
+  ['readedwordscountchanged_276',['readedWordsCountChanged',['../classhist_1_1HistController.html#aacdcd047d9e4c8a1891233d90e05166b',1,'hist::HistController::readedWordsCountChanged()'],['../classhist_1_1HistPageController.html#ad3c2259603bcc5f49701b18b192bafcc',1,'hist::HistPageController::readedWordsCountChanged()']]],
+  ['readprogresschanged_277',['readProgressChanged',['../classhist_1_1HistController.html#aa11d407d5d6945a0cf6ec04dde4a4f18',1,'hist::HistController::readProgressChanged()'],['../classhist_1_1HistPageController.html#a076d65ecafd6e61652f78b3365133a36',1,'hist::HistPageController::readProgressChanged()']]]
 ];

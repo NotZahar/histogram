@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['qmlservice_151',['QMLService',['../classhist_1_1QMLService.html',1,'hist']]]
+  ['navigation_175',['navigation',['../structhist_1_1types_1_1navigation.html',1,'hist::types']]],
+  ['navigationservice_176',['NavigationService',['../classhist_1_1NavigationService.html',1,'hist']]]
 ];

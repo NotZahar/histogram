@@ -107,8 +107,16 @@ $(function() {
 <tr class="separator:a455f2fa1bcf284afdd1d9d18a4f1c018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153c4b9e3836b300fb2f55e93fb2e5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a153c4b9e3836b300fb2f55e93fb2e5fb">onCanceled</a> () noexcept</td></tr>
 <tr class="separator:a153c4b9e3836b300fb2f55e93fb2e5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539370936eca8fefbdabf1df1644c0fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a539370936eca8fefbdabf1df1644c0fa">setIsReading</a> (bool isReading) noexcept</td></tr>
-<tr class="separator:a539370936eca8fefbdabf1df1644c0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e617ffc6d32b91292754ca49cb8f8de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a8e617ffc6d32b91292754ca49cb8f8de">onIsReadingChanged</a> (bool isReading) noexcept</td></tr>
+<tr class="separator:a8e617ffc6d32b91292754ca49cb8f8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1624a37b58eac885978d240b5feb107b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a1624a37b58eac885978d240b5feb107b">onHistDataChanged</a> (std::list&lt; QSharedPointer&lt; <a class="el" href="structhist_1_1structures_1_1Diff.html">structures::Diff</a> &gt;&gt; diffs) noexcept</td></tr>
+<tr class="separator:a1624a37b58eac885978d240b5feb107b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b6479b9a2349181182ce81848e2db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a59b6479b9a2349181182ce81848e2db8">onReadedWordsCountChanged</a> (int words) noexcept</td></tr>
+<tr class="separator:a59b6479b9a2349181182ce81848e2db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4c80522541edf2f1504eb514fcf109"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a4d4c80522541edf2f1504eb514fcf109">onReadedProgressChanged</a> (qreal progress) noexcept</td></tr>
+<tr class="separator:a4d4c80522541edf2f1504eb514fcf109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31b25e7dc77ba5eb17fb6f32eb62112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#ad31b25e7dc77ba5eb17fb6f32eb62112">onClearHistView</a> () noexcept</td></tr>
+<tr class="separator:ad31b25e7dc77ba5eb17fb6f32eb62112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Сигналы</h2></td></tr>
@@ -122,8 +130,20 @@ $(function() {
 <tr class="separator:a3e31b22338e99f7d3072cdf856e48689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cac0f09467b4f9be0df3bcce6ef26a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a9cac0f09467b4f9be0df3bcce6ef26a7">cancelEnabledChanged</a> ()</td></tr>
 <tr class="separator:a9cac0f09467b4f9be0df3bcce6ef26a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa283220e8923b9a8dc4744bf3789e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#afa283220e8923b9a8dc4744bf3789e2d">processProgressValueChanged</a> ()</td></tr>
-<tr class="separator:afa283220e8923b9a8dc4744bf3789e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc28b21ffbdca76ad9dd56f543ee5e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a3cc28b21ffbdca76ad9dd56f543ee5e1">histDataWordUpdated</a> (int position, QString word)</td></tr>
+<tr class="separator:a3cc28b21ffbdca76ad9dd56f543ee5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c724bb5c1905f9e7f44203ec4fbeb28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a6c724bb5c1905f9e7f44203ec4fbeb28">histDataQuantityUpdated</a> (int position, int quantity)</td></tr>
+<tr class="separator:a6c724bb5c1905f9e7f44203ec4fbeb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776d969177f8a99f0ac89b30ff9a9298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a776d969177f8a99f0ac89b30ff9a9298">histDataAdded</a> (int position, QString word, int quantity)</td></tr>
+<tr class="separator:a776d969177f8a99f0ac89b30ff9a9298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c10393e465c7e6f2cbf8c7e1ed335de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a6c10393e465c7e6f2cbf8c7e1ed335de">histDataRemoved</a> (int position)</td></tr>
+<tr class="separator:a6c10393e465c7e6f2cbf8c7e1ed335de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c2259603bcc5f49701b18b192bafcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#ad3c2259603bcc5f49701b18b192bafcc">readedWordsCountChanged</a> (int words)</td></tr>
+<tr class="separator:ad3c2259603bcc5f49701b18b192bafcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a076d65ecafd6e61652f78b3365133a36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a076d65ecafd6e61652f78b3365133a36">readProgressChanged</a> (qreal progress)</td></tr>
+<tr class="separator:a076d65ecafd6e61652f78b3365133a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d069d523380aabf8e65fef8c859fbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#aa8d069d523380aabf8e65fef8c859fbf">clearData</a> ()</td></tr>
+<tr class="separator:aa8d069d523380aabf8e65fef8c859fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
@@ -139,10 +159,6 @@ $(function() {
 <tr class="separator:a4f352106d66ac366814a22ef357e7a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0c08965bdfbcfcc17e782b7ccd0930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a3f0c08965bdfbcfcc17e782b7ccd0930">setCancelEnabled</a> (bool enabled) noexcept</td></tr>
 <tr class="separator:a3f0c08965bdfbcfcc17e782b7ccd0930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62493b5343b402aca5d9af2e580e6d8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a62493b5343b402aca5d9af2e580e6d8e">processProgressValue</a> () const noexcept</td></tr>
-<tr class="separator:a62493b5343b402aca5d9af2e580e6d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82c166e34e27256a48de5dfc0fe22a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#af82c166e34e27256a48de5dfc0fe22a3">setProcessProgressValue</a> (int value) noexcept</td></tr>
-<tr class="separator:af82c166e34e27256a48de5dfc0fe22a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Открытые статические члены</h2></td></tr>
@@ -157,8 +173,6 @@ $(function() {
 <tr class="separator:a36c5627d289f825016df0e45f31c69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d9ffb666a85ffdd63e51a05b125449d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a6d9ffb666a85ffdd63e51a05b125449d">cancelEnabled</a></td></tr>
 <tr class="separator:a6d9ffb666a85ffdd63e51a05b125449d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544ac388958ea68c19e0657a91bea09b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistPageController.html#a544ac388958ea68c19e0657a91bea09b">processProgressValue</a></td></tr>
-<tr class="separator:a544ac388958ea68c19e0657a91bea09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Методы</h2>
 <a id="a4f352106d66ac366814a22ef357e7a4f"></a>
@@ -211,6 +225,31 @@ $(function() {
 
 </div>
 </div>
+<a id="aa8d069d523380aabf8e65fef8c859fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d069d523380aabf8e65fef8c859fbf">&#9670;&nbsp;</a></span>clearData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::clearData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2978c4f2c1ab4511e608f5cd2ea2d7f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2978c4f2c1ab4511e608f5cd2ea2d7f8">&#9670;&nbsp;</a></span>fileSelected</h2>
 
@@ -226,6 +265,146 @@ $(function() {
           <td class="paramtype">QUrl&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a776d969177f8a99f0ac89b30ff9a9298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776d969177f8a99f0ac89b30ff9a9298">&#9670;&nbsp;</a></span>histDataAdded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::histDataAdded </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>word</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quantity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c724bb5c1905f9e7f44203ec4fbeb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c724bb5c1905f9e7f44203ec4fbeb28">&#9670;&nbsp;</a></span>histDataQuantityUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::histDataQuantityUpdated </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quantity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c10393e465c7e6f2cbf8c7e1ed335de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c10393e465c7e6f2cbf8c7e1ed335de">&#9670;&nbsp;</a></span>histDataRemoved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::histDataRemoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cc28b21ffbdca76ad9dd56f543ee5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc28b21ffbdca76ad9dd56f543ee5e1">&#9670;&nbsp;</a></span>histDataWordUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::histDataWordUpdated </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>word</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -287,6 +466,31 @@ $(function() {
 
 </div>
 </div>
+<a id="ad31b25e7dc77ba5eb17fb6f32eb62112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31b25e7dc77ba5eb17fb6f32eb62112">&#9670;&nbsp;</a></span>onClearHistView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onClearHistView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a664e0faeeed37281c245421b4ad0bd50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a664e0faeeed37281c245421b4ad0bd50">&#9670;&nbsp;</a></span>onFileSelected</h2>
 
@@ -301,6 +505,110 @@ $(function() {
           <td>(</td>
           <td class="paramtype">QUrl&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1624a37b58eac885978d240b5feb107b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1624a37b58eac885978d240b5feb107b">&#9670;&nbsp;</a></span>onHistDataChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onHistDataChanged </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; QSharedPointer&lt; <a class="el" href="structhist_1_1structures_1_1Diff.html">structures::Diff</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>diffs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e617ffc6d32b91292754ca49cb8f8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e617ffc6d32b91292754ca49cb8f8de">&#9670;&nbsp;</a></span>onIsReadingChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onIsReadingChanged </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isReading</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d4c80522541edf2f1504eb514fcf109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4c80522541edf2f1504eb514fcf109">&#9670;&nbsp;</a></span>onReadedProgressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onReadedProgressChanged </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59b6479b9a2349181182ce81848e2db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b6479b9a2349181182ce81848e2db8">&#9670;&nbsp;</a></span>onReadedWordsCountChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistPageController::onReadedWordsCountChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>words</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -388,8 +696,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a62493b5343b402aca5d9af2e580e6d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62493b5343b402aca5d9af2e580e6d8e">&#9670;&nbsp;</a></span>processProgressValue()</h2>
+<a id="ad3c2259603bcc5f49701b18b192bafcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c2259603bcc5f49701b18b192bafcc">&#9670;&nbsp;</a></span>readedWordsCountChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,23 +706,24 @@ $(function() {
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int hist::HistPageController::processProgressValue </td>
+          <td class="memname">void hist::HistPageController::readedWordsCountChanged </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>words</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afa283220e8923b9a8dc4744bf3789e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa283220e8923b9a8dc4744bf3789e2d">&#9670;&nbsp;</a></span>processProgressValueChanged</h2>
+<a id="a076d65ecafd6e61652f78b3365133a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076d65ecafd6e61652f78b3365133a36">&#9670;&nbsp;</a></span>readProgressChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,9 +732,10 @@ $(function() {
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void hist::HistPageController::processProgressValueChanged </td>
+          <td class="memname">void hist::HistPageController::readProgressChanged </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -464,32 +774,6 @@ $(function() {
 
 </div>
 </div>
-<a id="a539370936eca8fefbdabf1df1644c0fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539370936eca8fefbdabf1df1644c0fa">&#9670;&nbsp;</a></span>setIsReading</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hist::HistPageController::setIsReading </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isReading</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5e47d651dd9de97f166da9df76e34495"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e47d651dd9de97f166da9df76e34495">&#9670;&nbsp;</a></span>setOpenEnabled()</h2>
 
@@ -504,32 +788,6 @@ $(function() {
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enabled</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af82c166e34e27256a48de5dfc0fe22a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af82c166e34e27256a48de5dfc0fe22a3">&#9670;&nbsp;</a></span>setProcessProgressValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hist::HistPageController::setProcessProgressValue </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -682,28 +940,6 @@ $(function() {
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a544ac388958ea68c19e0657a91bea09b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544ac388958ea68c19e0657a91bea09b">&#9670;&nbsp;</a></span>processProgressValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hist::HistPageController::processProgressValue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -68,7 +68,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a> &#124;
 <a href="#signals">Сигналы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="classhist_1_1HistController-members.html">Полный список членов класса</a>  </div>
@@ -101,6 +100,14 @@ $(function() {
 Сигналы</h2></td></tr>
 <tr class="memitem:a777102c095244ee4c3992700feaf3b9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistController.html#a777102c095244ee4c3992700feaf3b9d">isReadingChanged</a> (bool isReading)</td></tr>
 <tr class="separator:a777102c095244ee4c3992700feaf3b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedfe25c5ed9c27d342744dde269b28f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistController.html#aaedfe25c5ed9c27d342744dde269b28f">histDataChanged</a> (std::list&lt; QSharedPointer&lt; <a class="el" href="structhist_1_1structures_1_1Diff.html">structures::Diff</a> &gt;&gt; diffs)</td></tr>
+<tr class="separator:aaedfe25c5ed9c27d342744dde269b28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdcd047d9e4c8a1891233d90e05166b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistController.html#aacdcd047d9e4c8a1891233d90e05166b">readedWordsCountChanged</a> (int words)</td></tr>
+<tr class="separator:aacdcd047d9e4c8a1891233d90e05166b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11d407d5d6945a0cf6ec04dde4a4f18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistController.html#aa11d407d5d6945a0cf6ec04dde4a4f18">readProgressChanged</a> (qreal value)</td></tr>
+<tr class="separator:aa11d407d5d6945a0cf6ec04dde4a4f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e43f46783ace9c52b00b786805d116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhist_1_1HistController.html#af5e43f46783ace9c52b00b786805d116">clearHistView</a> ()</td></tr>
+<tr class="separator:af5e43f46783ace9c52b00b786805d116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
@@ -164,6 +171,57 @@ $(function() {
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
+<a id="af5e43f46783ace9c52b00b786805d116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e43f46783ace9c52b00b786805d116">&#9670;&nbsp;</a></span>clearHistView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistController::clearHistView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaedfe25c5ed9c27d342744dde269b28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedfe25c5ed9c27d342744dde269b28f">&#9670;&nbsp;</a></span>histDataChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistController::histDataChanged </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; QSharedPointer&lt; <a class="el" href="structhist_1_1structures_1_1Diff.html">structures::Diff</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>diffs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac331084b6fbea21d793c12f9fbdf9c51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac331084b6fbea21d793c12f9fbdf9c51">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -203,6 +261,58 @@ $(function() {
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>isReading</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacdcd047d9e4c8a1891233d90e05166b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdcd047d9e4c8a1891233d90e05166b">&#9670;&nbsp;</a></span>readedWordsCountChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistController::readedWordsCountChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>words</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa11d407d5d6945a0cf6ec04dde4a4f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11d407d5d6945a0cf6ec04dde4a4f18">&#9670;&nbsp;</a></span>readProgressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hist::HistController::readProgressChanged </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

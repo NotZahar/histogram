@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['secondary_5fc_274',['secondary_c',['../classhist_1_1Styles.html#a4a9d31fe4db1a966f03b7d1be244330f',1,'hist::Styles']]],
-  ['size_275',['size',['../structhist_1_1structures_1_1SelectedFile.html#a9d672e872aec71c6576296f4b06b4096',1,'hist::structures::SelectedFile']]],
-  ['smallfontsize_276',['smallFontSize',['../classhist_1_1Styles.html#ab2bd5c5cf148d5a511250c7f4f8ffe3f',1,'hist::Styles']]],
-  ['smallspacing_277',['smallSpacing',['../classhist_1_1Styles.html#a2fcb256aeb2e780a9e91896d4ed64605',1,'hist::Styles']]],
-  ['standardmargin_278',['standardMargin',['../classhist_1_1Styles.html#aefffb4a94dde0c01d62723f5b79b7996',1,'hist::Styles']]],
-  ['standardradius_279',['standardRadius',['../classhist_1_1Styles.html#a756b454b31e04a90c71d09d490cc7db5',1,'hist::Styles']]],
-  ['start_5fbtn_280',['start_btn',['../classhist_1_1Messages.html#ac572a1f66291fd90143c358573320269',1,'hist::Messages']]]
+  ['quantity_319',['quantity',['../structhist_1_1structures_1_1DiffUpdateQuantity.html#ad78c17d863d4d8d4fea08772b663855d',1,'hist::structures::DiffUpdateQuantity::quantity()'],['../structhist_1_1structures_1_1DiffAdd.html#ab812e0ab924d3ad9eb9c31a531d60da3',1,'hist::structures::DiffAdd::quantity()']]]
 ];

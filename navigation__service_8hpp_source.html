@@ -71,25 +71,27 @@ $(function() {
 <div class="title">navigation_service.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="navigation__service_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<a href="navigation__service_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehist.html">hist</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classhist_1_1NavigationService.html">    4</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhist_1_1NavigationService.html">NavigationService</a> final : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        Q_OBJECT</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>&amp; <a class="code" href="classhist_1_1NavigationService.html#a3c8f73f3227fda06640456cd8fb3264b">instance</a>() noexcept;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    signals:</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368">   11</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368">changePage</a>(QString pagePath);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>(QObject* parent = <span class="keyword">nullptr</span>) noexcept;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        ~<a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>() = default;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="aclasshist_1_1NavigationService_html"><div class="ttname"><a href="classhist_1_1NavigationService.html">hist::NavigationService</a></div><div class="ttdef"><b>Definition:</b> navigation_service.hpp:4</div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehist.html">hist</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classhist_1_1NavigationService.html">    6</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classhist_1_1NavigationService.html">NavigationService</a> final : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">static</span> <a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>&amp; <a class="code" href="classhist_1_1NavigationService.html#a3c8f73f3227fda06640456cd8fb3264b">instance</a>() noexcept;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    signals:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368">   13</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368">changePage</a>(QString pagePath);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>(QObject* parent = <span class="keyword">nullptr</span>) noexcept;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        ~<a class="code" href="classhist_1_1NavigationService.html">NavigationService</a>() = default;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="ttc" id="aclasshist_1_1NavigationService_html"><div class="ttname"><a href="classhist_1_1NavigationService.html">hist::NavigationService</a></div><div class="ttdef"><b>Definition:</b> navigation_service.hpp:6</div></div>
 <div class="ttc" id="aclasshist_1_1NavigationService_html_a3c8f73f3227fda06640456cd8fb3264b"><div class="ttname"><a href="classhist_1_1NavigationService.html#a3c8f73f3227fda06640456cd8fb3264b">hist::NavigationService::instance</a></div><div class="ttdeci">static NavigationService &amp; instance() noexcept</div><div class="ttdef"><b>Definition:</b> navigation_service.cpp:8</div></div>
 <div class="ttc" id="aclasshist_1_1NavigationService_html_af3fd5e2ac6c7a70130b02fb1fcef9368"><div class="ttname"><a href="classhist_1_1NavigationService.html#af3fd5e2ac6c7a70130b02fb1fcef9368">hist::NavigationService::changePage</a></div><div class="ttdeci">void changePage(QString pagePath)</div></div>
 <div class="ttc" id="anamespacehist_html"><div class="ttname"><a href="namespacehist.html">hist</a></div><div class="ttdef"><b>Definition:</b> hist_state.cpp:6</div></div>

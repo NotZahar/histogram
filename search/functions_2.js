@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['done_206',['done',['../classhist_1_1InitController.html#aa09e1b8947b1710ee3731b3369b8d0f1',1,'hist::InitController']]]
+  ['diff_234',['Diff',['../structhist_1_1structures_1_1Diff.html#a766bb92282bfb5fa6a555e5899db46e6',1,'hist::structures::Diff::Diff()=delete'],['../structhist_1_1structures_1_1Diff.html#ab54918dd12a58da61cbcddccbac5d6a4',1,'hist::structures::Diff::Diff(int position)']]],
+  ['diffadd_235',['DiffAdd',['../structhist_1_1structures_1_1DiffAdd.html#a477db710f49e83ab99244692a1f23496',1,'hist::structures::DiffAdd::DiffAdd()=delete'],['../structhist_1_1structures_1_1DiffAdd.html#ae90b991b6824b09cc0bd842b1c7d6ba0',1,'hist::structures::DiffAdd::DiffAdd(int position, const QString &amp;word, int quantity)']]],
+  ['diffremove_236',['DiffRemove',['../structhist_1_1structures_1_1DiffRemove.html#a19f7605862004110b0160d33ba8ac62b',1,'hist::structures::DiffRemove::DiffRemove()=delete'],['../structhist_1_1structures_1_1DiffRemove.html#a122831efba1eb19e8a11d5b6d458d006',1,'hist::structures::DiffRemove::DiffRemove(int position)']]],
+  ['diffupdatequantity_237',['DiffUpdateQuantity',['../structhist_1_1structures_1_1DiffUpdateQuantity.html#a9086df5832cc056d59082927c3422394',1,'hist::structures::DiffUpdateQuantity::DiffUpdateQuantity()=delete'],['../structhist_1_1structures_1_1DiffUpdateQuantity.html#a4b5f481b78fd4895e9e9e26c0c6d98e9',1,'hist::structures::DiffUpdateQuantity::DiffUpdateQuantity(int position, int quantity)']]],
+  ['diffupdateword_238',['DiffUpdateWord',['../structhist_1_1structures_1_1DiffUpdateWord.html#a89de4f81ba10f1264d40169644e611c2',1,'hist::structures::DiffUpdateWord::DiffUpdateWord()=delete'],['../structhist_1_1structures_1_1DiffUpdateWord.html#adefcf9e9a76ef1070ba63a645b582367',1,'hist::structures::DiffUpdateWord::DiffUpdateWord(int position, const QString &amp;word)']]],
+  ['done_239',['done',['../classhist_1_1InitController.html#aa09e1b8947b1710ee3731b3369b8d0f1',1,'hist::InitController']]]
 ];
