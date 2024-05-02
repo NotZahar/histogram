@@ -1,14 +1,11 @@
 #include "hist_page_controller.hpp"
 
-#include <QDebug> // TODO:
-
 namespace hist {
     HistPageController::HistPageController(QObject* parent) noexcept
         : QObject{ parent },
           _openEnabled{ true },
           _startEnabled{ false },
           _cancelEnabled{ true },
-          _processProgressValue{ 0 },
           _isReading{ false }
     {}
 
@@ -50,19 +47,45 @@ namespace hist {
         emit cancelEnabledChanged();
     }
 
-    int HistPageController::processProgressValue() const noexcept {
-        return _processProgressValue;
-    }
-
-    void HistPageController::setProcessProgressValue(int value) noexcept {
-        if (_processProgressValue == value)
-            return;
-        _processProgressValue = value;
-        emit processProgressValueChanged();
-    }
-
-    void HistPageController::setIsReading(bool isReading) noexcept {
+    void HistPageController::onIsReadingChanged(bool isReading) noexcept {
         _isReading = isReading;
+    }
+
+    void HistPageController::onHistDataChanged(std::list<QSharedPointer<structures::Diff>> diffs) noexcept {
+        assert(!diffs.empty());
+        for (auto& diff : diffs) {
+            if (auto* updateWord = dynamic_cast<structures::DiffUpdateWord*>(diff.get()); updateWord) {
+                emit histDataWordUpdated(updateWord->position, updateWord->word);
+                continue;
+            }
+
+            if (auto* updateQuantity = dynamic_cast<structures::DiffUpdateQuantity*>(diff.get()); updateQuantity) {
+                emit histDataQuantityUpdated(updateQuantity->position, updateQuantity->quantity);
+                continue;
+            }
+
+            if (auto* add = dynamic_cast<structures::DiffAdd*>(diff.get()); add) {
+                emit histDataAdded(add->position, add->word, add->quantity);
+                continue;
+            }
+
+            if (auto* remove = dynamic_cast<structures::DiffRemove*>(diff.get()); remove) {
+                emit histDataRemoved(remove->position);
+                continue;
+            }
+        }
+    }
+
+    void HistPageController::onReadedWordsCountChanged(int words) noexcept {
+        emit readedWordsCountChanged(words);
+    }
+
+    void HistPageController::onReadedProgressChanged(qreal progress) noexcept {
+        emit readProgressChanged(progress);
+    }
+
+    void HistPageController::onClearHistView() noexcept {
+        emit clearData();
     }
 
     void HistPageController::onFileSelected(QUrl path) noexcept {

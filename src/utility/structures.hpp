@@ -1,8 +1,9 @@
+#pragma once
+
 #include <map>
 #include <unordered_map>
 #include <unordered_set>
 
-#include <QDebug> // TODO:
 #include <QString>
 #include <QUrl>
 
@@ -66,6 +67,11 @@ namespace hist::structures {
             _wordsTop.insert({ currentNumberOfWords, word });
         }
 
+        void clear() noexcept {
+            _words.clear();
+            _wordsTop.clear();
+        }
+
     private:
         void updatePosition(const QString& word) {
             assert(_words.contains(word));
@@ -109,5 +115,56 @@ namespace hist::structures {
 
         std::unordered_map<QString, WordData> _words;
         std::map<position_t, QString> _wordsTop;
+    };
+
+    struct Diff {
+        int position;
+
+        virtual ~Diff() = default;
+
+    protected:
+        Diff() = delete;
+        Diff(int position)
+            : position{ position }
+        {}
+    };
+
+    struct DiffUpdateWord : public Diff {
+        DiffUpdateWord() = delete;
+        DiffUpdateWord(int position, const QString& word)
+            : Diff{ position },
+              word{ word }
+        {}
+
+        QString word;
+    };
+
+    struct DiffUpdateQuantity : public Diff {
+        DiffUpdateQuantity() = delete;
+        DiffUpdateQuantity(int position, int quantity)
+            : Diff{ position },
+              quantity{ quantity }
+        {}
+
+        int quantity;
+    };
+
+    struct DiffAdd : public Diff {
+        DiffAdd() = delete;
+        DiffAdd(int position, const QString& word, int quantity)
+            : Diff{ position },
+              word{ word },
+              quantity{ quantity }
+        {}
+
+        QString word;
+        int quantity;
+    };
+
+    struct DiffRemove : public Diff {
+        DiffRemove() = delete;
+        explicit DiffRemove(int position)
+            : Diff{ position }
+        {}
     };
 }

@@ -102,7 +102,6 @@ Item {
             HistComponents.HProgressBar {
                 id: readProgressBar
 
-                value: HistPageController.processProgressValue
                 width: parent.width
                 height: Styles.defaultButtonHeight
             }
@@ -114,6 +113,38 @@ Item {
 
         onSelectedFileChanged: {
             HistPageController.onFileSelected(fsDialog.selectedFile)
+        }
+    }
+
+    Connections {
+        target: HistPageController
+
+        function onHistDataWordUpdated(position: int, word: string) {
+            histogram.dataModel.setProperty(position, "word", word)
+        }
+
+        function onHistDataQuantityUpdated(position: int, quantity: int) {
+            histogram.dataModel.setProperty(position, "quantity", quantity)
+        }
+
+        function onHistDataAdded(_: int, word: string, quantity: int) {
+            histogram.dataModel.append({ "quantity": quantity, "word": word })
+        }
+
+        function onHistDataRemoved(position: int) {
+            histogram.dataModel.remove(position)
+        }
+
+        function onClearData() {
+            histogram.dataModel.clear()
+        }
+
+        function onReadedWordsCountChanged(words: int) {
+            histogram.topLabelValue = words
+        }
+
+        function onReadProgressChanged(progress: real) {
+            readProgressBar.value = progress
         }
     }
 }

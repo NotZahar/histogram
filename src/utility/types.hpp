@@ -19,20 +19,4 @@ namespace hist::types {
     struct controller {
         H_MODULE_INFO("Hist.Control", 1, 0)
     };
-
-    class WordsStatistics {
-    public:
-        WordsStatistics() noexcept;
-
-        ~WordsStatistics() = default;
-
-        void addWord();
-
-    private:
-        inline static constexpr int INVALID_POSITION = -1;
-
-        const int _numberOfTopWords;
-        std::unordered_map<int, int> _statistics;
-        std::vector<QString> _topWords;
-    };
 }

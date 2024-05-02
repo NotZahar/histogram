@@ -53,7 +53,7 @@ Item {
             Text {
                 id: topLabel
 
-                property int labelValue: 1000 // 0
+                property int labelValue: 0
 
                 anchors {
                     top: parent.top
@@ -135,24 +135,6 @@ Item {
                     }
                 }
             }
-        }
-
-        Component.onCompleted: {
-            columnsModel.append({ "quantity": 100, "word": "abcd" })
-            columnsModel.append({ "quantity": 100, "word": "abcd" })
-            columnsModel.append({ "quantity": 40, "word": "abcd" })
-            columnsModel.append({ "quantity": 190, "word": "abcd" })
-            columnsModel.append({ "quantity": 500, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 990, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 900, "word": "abcd" })
-            columnsModel.append({ "quantity": 800, "word": "abcd" })
         }
     }
 }

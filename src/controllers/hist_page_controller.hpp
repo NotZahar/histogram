@@ -1,5 +1,10 @@
+#pragma once
+
 #include <QObject>
 #include <QUrl>
+#include <QSharedPointer>
+
+#include "../utility/structures.hpp"
 
 namespace hist {
     class HistPageController final : public QObject {
@@ -8,7 +13,6 @@ namespace hist {
         Q_PROPERTY(bool openEnabled READ openEnabled WRITE setOpenEnabled NOTIFY openEnabledChanged)
         Q_PROPERTY(bool startEnabled READ startEnabled WRITE setStartEnabled NOTIFY startEnabledChanged)
         Q_PROPERTY(bool cancelEnabled READ cancelEnabled WRITE setCancelEnabled NOTIFY cancelEnabledChanged)
-        Q_PROPERTY(int processProgressValue READ processProgressValue NOTIFY processProgressValueChanged)
 
     public:
         static HistPageController& instance() noexcept;
@@ -22,9 +26,6 @@ namespace hist {
         bool cancelEnabled() const noexcept;
         void setCancelEnabled(bool enabled) noexcept;
 
-        int processProgressValue() const noexcept;
-        void setProcessProgressValue(int value) noexcept;
-
     signals:
         void fileSelected(QUrl path);
         void startRead();
@@ -33,14 +34,25 @@ namespace hist {
         void startEnabledChanged();
         void cancelEnabledChanged();
 
-        void processProgressValueChanged();
+        void histDataWordUpdated(int position, QString word);
+        void histDataQuantityUpdated(int position, int quantity);
+        void histDataAdded(int position, QString word, int quantity);
+        void histDataRemoved(int position);
+
+        void readedWordsCountChanged(int words);
+        void readProgressChanged(qreal progress);
+        void clearData();
 
     public slots:
         void onFileSelected(QUrl path) noexcept;
         void onStarted() noexcept;
         void onCanceled() noexcept;
 
-        void setIsReading(bool isReading) noexcept;
+        void onIsReadingChanged(bool isReading) noexcept;
+        void onHistDataChanged(std::list<QSharedPointer<structures::Diff>> diffs) noexcept;
+        void onReadedWordsCountChanged(int words) noexcept;
+        void onReadedProgressChanged(qreal progress) noexcept;
+        void onClearHistView() noexcept;
 
     private:
         explicit HistPageController(QObject* parent = nullptr) noexcept;
@@ -51,7 +63,6 @@ namespace hist {
         bool _startEnabled;
         bool _cancelEnabled;
 
-        int _processProgressValue;
         bool _isReading;
     };
 }
